@@ -198,7 +198,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(./Img/background_index.jpg);
+  background-image: url(./img/background_index.jpg);
   background-size: cover;
   object-fit: cover;
 }
@@ -237,7 +237,7 @@ button {
 
 /* Projects */
 .mainProjects {
-  background-image: url(./Img/background_main.jpg);
+  background-image: url(./img/background_main.jpg);
   background-size: cover;
   padding: var(--spacing-xsmall);
   display: flex;
@@ -313,7 +313,7 @@ button {
   padding: var(--spacing-xxsmall);
   max-width: 100%;
   min-height: 100vh;
-  background-image: url(./Img/background_main.jpg);
+  background-image: url(./img/background_main.jpg);
   background-size: cover;
 }
 
@@ -364,7 +364,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(./Img/background_main.jpg);
+  background-image: url(./img/background_main.jpg);
   background-size: cover;
 }
 
@@ -444,7 +444,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(./Img/background_main.jpg);
+  background-image: url(./img/background_main.jpg);
   background-size: cover;
 }
 
