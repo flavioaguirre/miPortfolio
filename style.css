@@ -556,7 +556,10 @@ button {
 
   /* Footer  */
   .footer {
-    height: 25vh;
+    height: 27vh;
+  }
+  .footerConteiner__title {
+    font-size: var(--text-base);
   }
 
   /* index  */
@@ -615,9 +618,9 @@ button {
   }
   .headerNav__ul {
     max-height: 80%;
-    padding: .3rem;
+    padding: .5rem;
     flex-direction: column;
-    gap: 1.6rem;    
+    gap: 1.4rem;    
   }
   .headerNav__a {
     font-size: var(--text-base);
@@ -640,12 +643,18 @@ button {
   }
 
   /* Projects  */
+  .mainProjects__section {
+    padding: 2%;
+  }
   .sectionProjects__h1 {
     padding: var(--spacing-xsmall) 0 1rem 0;
     margin-top: var(--spacing-xsmall);
     font-size: var(--text-medium);
     text-align: center;
     line-height: var(--spacing-xxsmall);
+  }
+  .gridItems__picture {
+    margin-left: 1.5rem;
   }
   .gridItems__picture:first-of-type {
     grid-column: 1 / span 2;
@@ -656,6 +665,9 @@ button {
   }
 
   /* Acerca de  */
+  .mainAboutMe__section {
+    padding: 2%;
+  }
   .sectionAboutMeDiv__h1 {
     margin-top: var(--spacing-xsmall);
     line-height: var(--spacing-xxsmall);
@@ -675,6 +687,9 @@ button {
     margin-top: var(--spacing-large);
     line-height: var(--spacing-xxsmall);
   }
+  .grid_container--technologys {
+    padding: 2%;
+  }
   .mainTechnologySectionPicture__img {
     margin-left: var(--spacing-small);
   }
@@ -688,6 +703,9 @@ button {
   }
   .section__form {
     margin: var(--spacing-xlarge) var(--spacing-xxsmall) var(--spacing-xsmall) var(--spacing-xxsmall);
+  }
+  .form__title {
+    line-height: normal;
   }
 }
 
