@@ -675,6 +675,9 @@ button {
   .sectionAboutMePicture__img--foto {
     max-width: 80%;
   }
+  .sectionAboutMeDiv__p {
+    font-size: var(--text-base);
+  }
 
   /* Tecnologias  */
   .mainTechnology {
