@@ -3,7 +3,7 @@
   /*-- colors-- */
   --color-dark: #01030D;
   --shadows-color: rgba(0, 0, 0, 0.449);
-  --background-header: #74797e3e;
+  --background-header: #222126;
   --background-footer: #222126;
   --text-color: #F2F2F2;
   --background-botom: #116EBF;
@@ -112,8 +112,8 @@ button {
   z-index: 1;
 }
 
-.header__nav {
-  margin-top: var(--spacing-xxsmall);
+#header__nav {
+  margin-top: var(--spacing-xsmall);
   height: 90%;
   padding: var(--spacing-xsmall);
   width: 62%;
@@ -144,7 +144,9 @@ button {
 }
 
 .headerNav__li:hover {
-  color: rgba(0, 255, 255, 0.313);
+  color: var(--background-botom2);
+  transform: scale(1.2);
+  transition: all 0.3s ease-out;
 }
 
 /* End of header  */
@@ -181,6 +183,11 @@ button {
   color: var(--background-botom);
   padding: 0.5em;
   font-size: var(--text-base);
+}
+
+.footerConteinerUl__a:hover {
+  transform: scale(1.3);
+  transition: all 0.1s ease-out;
 }
 
 /* End of Footer */
@@ -222,8 +229,7 @@ button {
 
 /* Projects */
 .mainProjects {
-  background-image: url(./img/background_main.jpg);
-  background-size: cover;
+  background: linear-gradient(0deg, rgba(116,121,126,1) 0%, rgba(0,0,0,0.9199539312795431) 25%);
   padding: var(--spacing-xsmall);
   display: flex;
   justify-content: center;
@@ -240,7 +246,7 @@ button {
   width: 100%;
 }
 
-.sectionProjects__h1 {
+#sectionProjects__h1 {
   display: flex;
   justify-content: center;
   font-weight: bold;
@@ -273,7 +279,8 @@ button {
 }
 
 .gridItems__picture:hover {
-  filter: brightness(0.3)
+  filter: brightness(0.3);
+  transform: scale(1.2);
 }
 
 .gridItems__picture:first-of-type {
@@ -298,8 +305,7 @@ button {
   padding: var(--spacing-xxsmall);
   max-width: 100%;
   min-height: 100vh;
-  background-image: url(./img/background_main.jpg);
-  background-size: cover;
+  background: linear-gradient(0deg, rgba(116,121,126,1) 0%, rgba(0,0,0,0.9199539312795431) 25%);
 }
 
 .mainAboutMe__section {
@@ -322,7 +328,7 @@ button {
   border-radius: var(--spacing-xxlarge);
 }
 
-.sectionAboutMeDiv__h1 {
+#sectionAboutMeDiv__h1 {
   font-size: var(--text-large);
   text-align: center;
   padding: var(--spacing-xsmall) var(--spacing-xxsmall) var(--spacing-xxsmall) var(--spacing-xxsmall);
@@ -349,8 +355,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(./img/background_main.jpg);
-  background-size: cover;
+  background: linear-gradient(0deg, rgba(116,121,126,1) 0%, rgba(0,0,0,0.9199539312795431) 25%);
 }
 
 .container_titles {
@@ -362,7 +367,7 @@ button {
   align-items: center;
 }
 
-.mainTechnologySection__h1 {
+#mainTechnologySection__h1 {
   padding: 2rem;
   font-size: var(--text-medium);
   border-bottom: 3px solid var(--text-color);
@@ -392,7 +397,7 @@ button {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 30rem;
   justify-items: center;
-  gap: var(--spacing-xlarge);
+  gap: var(--spacing-xxlarge);
   text-align: center;
 }
 
@@ -402,6 +407,11 @@ button {
   width: 80%;
   height: 22rem;
   border-color: 10px solid var(--background-footer);
+}
+
+.mainTechnologySection__div:hover {
+  transform: scale(1.3);
+  transition: all 0.3s ease-out;
 }
 
 .mainTechnologySectionPicture__img {
@@ -429,8 +439,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(./img/background_main.jpg);
-  background-size: cover;
+  background: linear-gradient(0deg, rgba(116,121,126,1) 0%, rgba(0,0,0,0.9199539312795431) 25%);
 }
 
 .mainContact__section {
@@ -441,7 +450,7 @@ button {
   align-items: center;
 }
 
-.section__form {
+#section__form {
   margin-bottom: var(--spacing-medium);
   height: auto;
   width: 100%;
@@ -498,11 +507,19 @@ button {
 /* Media Queries */
 @media only screen and (max-width:992px) {
   /* header  */
-  .header__nav {
-      width: 80%;
+  #header__nav {
+      width: 90%;
   }
   .headerNav__a {
       font-size: 1.7rem;
+  }
+
+  /* Footer  */
+  .footer {
+    height: 27vh;
+  }
+  .footerConteiner__title {
+    font-size: var(--text-base);
   }
 
   /* index  */
@@ -525,6 +542,7 @@ button {
 
   /* Technology */
   .grid_container--technologys {
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
   }
 }
@@ -532,19 +550,11 @@ button {
 @media only screen and (max-width:768px) {
 
   /* header  */
-  .header__nav {
+  #header__nav {
     width: 95%;
   }
   .headerNav__a {
-    font-size: 1.7rem;
-  }
-
-  /* Footer  */
-  .footer {
-    height: 27vh;
-  }
-  .footerConteiner__title {
-    font-size: var(--text-base);
+    font-size: 1.6rem;
   }
 
   /* index  */
@@ -552,9 +562,12 @@ button {
     font-size: var(--text-medium);
     line-height: var(--spacing-xxsmall);
   }
+  .sectionIndex__h2 {
+    font-size: var(--text-small);
+  }
 
   /* Projects  */
-  .sectionProjects__h1 {
+  #sectionProjects__h1 {
     font-size: var(--text-medium);
     text-align: center;
     line-height: var(--spacing-xxsmall);
@@ -595,7 +608,7 @@ button {
     height: 25vh;
     background-color: #222126;
   }
-  .header__nav {
+  #header__nav {
     width: 100%;
     height: 100%;    
     margin-top: 0;
@@ -609,6 +622,11 @@ button {
   }
   .headerNav__a {
     font-size: var(--text-base);
+  }
+
+  /* Footer  */
+  .footer {
+    max-height: 18vh;
   }
 
   /* index  */
@@ -627,12 +645,17 @@ button {
     line-height: var(--spacing-xxsmall);
   }
 
+  /* Sections for mobile margin-top  */
+  section {
+    margin-top: var(--spacing-xxlarge);
+  }
+  
   /* Projects  */
   .mainProjects__section {
     padding: 2%;
   }
-  .sectionProjects__h1 {
-    padding: var(--spacing-xsmall) 0 1rem 0;
+  #sectionProjects__h1 {
+    padding: var(--spacing-small) 0 1rem 0;
     margin-top: var(--spacing-xsmall);
     font-size: var(--text-medium);
     text-align: center;
@@ -653,9 +676,10 @@ button {
   .mainAboutMe__section {
     padding: 2%;
   }
-  .sectionAboutMeDiv__h1 {
-    margin-top: var(--spacing-xsmall);
-    line-height: var(--spacing-xxsmall);
+  #sectionAboutMeDiv__h1 {
+    padding: var(--spacing-small) 0 1rem 0;
+    font-size: var(--text-medium);
+    line-height: normal;
   }
   .sectionAboutMePicture__img--foto {
     max-width: 80%;
@@ -673,11 +697,18 @@ button {
   }
   .container_titles {
     margin-top: var(--spacing-large);
+    padding: var(--spacing-xsmall) 0 var(--spacing-medium) 0;
     line-height: var(--spacing-xxsmall);
   }
   .grid_container--technologys {
     padding: 2%;
+    gap: var(--spacing-medium);
   }
+  .mainTechnologySection__div:hover {
+    transform: none;
+    transition: all;
+  }
+  
   .mainTechnologySectionPicture__img {
     margin-left: var(--spacing-small);
   }
