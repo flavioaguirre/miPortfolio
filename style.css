@@ -109,14 +109,60 @@ button {
   height: 10vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   z-index: 1;
 }
+
+/* Split Darkness button */
+.dropdown-modif {
+  margin-top: var(--spacing-xxsmall);
+}
+
+.btn-secondary-modif {
+background: none;
+border: none;
+font-family: var(--font-header);
+font-size: var(--text-base);
+}
+
+.btn:first-child:hover {
+  background: none;
+  color: var(--background-botom2);
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+  background: none;
+  color: var(--background-botom);
+}
+
+.dropdown-menu-modif {
+  font-size: var(--text-base);
+  padding: 1rem;
+}
+
+.dropdown-item-modif {
+  font-family: var(--font-header);
+  font-size: var(--text-base);
+}
+
+.dropdown-item-modif:hover {
+  background: var(--background-botom2);
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background: var(--background-botom);
+  border-radius: .5rem;
+  padding: 1rem;
+}
+/* End of Split Darkness button */
 
 #header__nav {
   margin-top: var(--spacing-xsmall);
   height: 90%;
   padding: var(--spacing-xsmall);
-  width: 62%;
+  width: 72%;
   background-color: var(--background-header);
   display: flex;
   align-items: center;
@@ -126,14 +172,16 @@ button {
 }
 
 .headerNav__ul {
-  padding: var(--spacing-xxsmall) 0;
+  width: 100%;
+  padding: var(--spacing-xxsmall);
   display: flex;
   gap: var(--spacing-medium);
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .headerNav__a {
+  margin-top: 1.2rem;
   font-family: var(--font-header);
   font-size: var(--text-base);
   text-align: center;
@@ -160,7 +208,7 @@ button {
   align-items: center;
   max-width: 100%;
   width: 100%;
-  height: 20vh;
+  height: 22vh;
   background-color: var(--background-footer);
 }
 
@@ -213,7 +261,7 @@ button {
 .sectionIndex__h1 {
   font-size: var(--text-xlarge);
   font-weight: bold;
-  padding: .6em;
+  padding: .2em;
   text-align: center;
   border-bottom: #fff solid 2px;
   text-shadow: .4375rem .8125rem 2.3125rem var(--color-oscuro);
@@ -390,44 +438,12 @@ button {
   line-height: var(--spacing-xxsmall);
 }
 
-.grid_container--technologys {
-  max-width: 100%;
-  padding: var(--spacing-medium);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 30rem;
-  justify-items: center;
-  gap: var(--spacing-xxlarge);
-  text-align: center;
+/* Carousel */
+.img-rezise {
+  height: 450px;
+  border-radius: var(--spacing-medium)  ;
 }
-
-.gridItems__picture--technologys {
-  padding: var(--spacing-xsmall);
-  max-width: 100%;
-  width: 80%;
-  height: 22rem;
-  border-color: 10px solid var(--background-footer);
-}
-
-.mainTechnologySection__div:hover {
-  transform: scale(1.3);
-  transition: all 0.3s ease-out;
-}
-
-.mainTechnologySectionPicture__img {
-  margin-left: var(--spacing-medium);
-  border-radius: var(--spacing-small);
-}
-
-.sectionTechnology__h3 {
-  font-size: var(--text-small);
-  color: var(--background-botom);
-}
-
-.mainTechnologySectionDiv__p {
-  font-size: var(--text-base);
-  line-height: var(--spacing-xxsmall);
-}
+/* End ofCarousel */
 
 /* End of mainTechnology */
 
@@ -508,7 +524,7 @@ button {
 @media only screen and (max-width:992px) {
   /* header  */
   #header__nav {
-      width: 90%;
+      width: 80%;
   }
   .headerNav__a {
       font-size: 1.7rem;
