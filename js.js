@@ -15,6 +15,6 @@ const alert = (message, type) => {
 const alertTrigger = document.getElementById('liveAlertBtn')
 if (alertTrigger) {
   alertTrigger.addEventListener('click', () => {
-    alert('Participa por becas exclusivas a través de nuestros desafíos', 'success')
+    alert('Participa por becas exclusivas completando nuestros desafíos proximamente en...', 'success')
   })
 }

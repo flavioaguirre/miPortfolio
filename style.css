@@ -543,7 +543,7 @@ font-size: var(--text-base);
 }
 /* Alertas */
 .btn-primary-modif {
-  font-size: var(--text-small);
+  font-size: var(--text-base);
 
 }
 .font-size {
