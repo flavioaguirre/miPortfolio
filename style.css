@@ -447,8 +447,12 @@ font-size: var(--text-base);
 
 /* Carousel */
 .img-rezise {
+  margin-top: var(--spacing-medium);
   height: 35rem;
   border-radius: var(--spacing-medium)  ;
+}
+.img-rezise:hover {
+  cursor: pointer;
 }
 /* End ofCarousel */
 
