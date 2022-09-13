@@ -33,36 +33,36 @@
 /*----------- Fin Variables CSS */
 
 /* Header y Footer */
+
+/* Header  */
 .navbar-nav-modif {
   margin: 0 auto;
   gap: var(--spacing-xsmall);
   font-family: var(--font-header);
 }
-.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
-    color: var(--background-botom);
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: var(--background-botom);
 }
 .btn-outline-success {
-    color: var(--background-botom);
-    border-color: var(--background-botom);
+  color: var(--background-botom);
+  border-color: var(--background-botom);
 }
 .code-slash-modif {
-    color: #f2f2f2;
-    margin-right: .5rem;
+  color: #f2f2f2;
+  margin-right: 0.5rem;
 }
-.dropdown-item:focus, .dropdown-item:hover {
-    background-color: var(--background-botom);
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: var(--background-botom);
 }
 .bi-search-bg:hover {
-    background: #116ebf;
+  background: #116ebf;
 }
 
-
-
-
-
+/* Footer  */
 
 /*Fin Header y Footer */
-
 
 main {
   min-height: 100vh;
