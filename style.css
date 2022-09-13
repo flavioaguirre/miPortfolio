@@ -49,6 +49,12 @@
     color: #f2f2f2;
     margin-right: .5rem;
 }
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: var(--background-botom);
+}
+.bi-search-bg:hover {
+    background: #116ebf;
+}
 
 
 
