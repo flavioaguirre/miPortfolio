@@ -1,56 +1,71 @@
-/*----------- Normalize CSS */
+/*----------- VariablesCSS */
 :root {
-    /*-- colors-- */
-    --color-dark: #01030D;
-    --shadows-color: rgba(0, 0, 0, 0.449);
-    --background-header: #74797e3e;
-    --background-footer: #222126;
-    --text-color: #F2F2F2;
-    --background-botom: #116EBF;
-    --background-botom2: #138AF2;
-  
-    /* Spacings */
-    --spacing-xxlarge: 13em;
-    --spacing-xlarge: 10em;
-    --spacing-large: 8em;
-    --spacing-medium: 5em;
-    --spacing-small: 3em;
-    --spacing-xsmall: 2em;
-    --spacing-xxsmall: 1em;
-  
-    /* Font-Family */
-    --font-header: sans-serif;
-    --font-principal: Roboto;
-  
-    /* font-Sizes */
-    --text-xlarge: 7.2rem;
-    --text-large: 5.2rem;
-    --text-medium: 4rem;
-    --text-small: 3rem;
-    --text-xsmall: 1.4rem;
-    --text-base: 1.9rem;
-  }
+  /*-- colors-- */
+  --color-dark: #01030d;
+  --shadows-color: rgba(0, 0, 0, 0.449);
+  --background-header: #74797e3e;
+  --background-footer: #222126;
+  --text-color: #f2f2f2;
+  --background-botom: #116ebf;
+  --background-botom2: #138af2;
 
-* {
-    padding: 0;
-    margin: 0;
-}
+  /* Spacings */
+  --spacing-xxlarge: 13em;
+  --spacing-xlarge: 10em;
+  --spacing-large: 8em;
+  --spacing-medium: 5em;
+  --spacing-small: 3em;
+  --spacing-xsmall: 2em;
+  --spacing-xxsmall: 1em;
 
-.navbar-bg {
-    background: none;
+  /* Font-Family */
+  --font-header: sans-serif;
+  --font-principal: Roboto;
+
+  /* font-Sizes */
+  --text-xlarge: 7.2rem;
+  --text-large: 5.2rem;
+  --text-medium: 4rem;
+  --text-small: 3rem;
+  --text-xsmall: 1.4rem;
+  --text-base: 1.9rem;
 }
+/*----------- Fin Variables CSS */
+
+/* Header y Footer */
 .navbar-nav-modif {
-    margin: 0 auto;
+  margin: 0 auto;
+  gap: var(--spacing-xsmall);
+  font-family: var(--font-header);
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--background-botom);
+}
+.btn-outline-success {
+    color: var(--background-botom);
+    border-color: var(--background-botom);
+}
+.code-slash-modif {
+    color: #f2f2f2;
+    margin-right: .5rem;
 }
 
-main{
-    min-height: 100vh;
-background-image: url(./img/background_index.jpg);
-background-size: cover;
+
+
+
+
+
+/*Fin Header y Footer */
+
+
+main {
+  min-height: 100vh;
+  background-image: url(./img/background_index.jpg);
+  background-size: cover;
 }
 
 .footer {
-    background: #116EBF;
-    height: 75px;
-    width: 100%;
+  background: #116ebf;
+  height: 75px;
+  width: 100%;
 }
