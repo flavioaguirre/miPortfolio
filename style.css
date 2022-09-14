@@ -140,13 +140,15 @@ padding-left: 25rem;
   font-weight: bold;
 }
 
-/* main Sobre mí */
-.main-sobre-mi {
+/*------ main-pages */
+.main-pages {
   background: linear-gradient(0deg, rgba(116,121,126,1) 0%, rgba(0,0,0,0.9199539312795431) 25%);
   color: var(--text-color);
   font-family: var(--font-principal);
   padding: var(--spacing-xsmall);
 }
+
+/*  Sobre mí */
 .sobre-mi-section__h1 {
   margin: var(--spacing-xsmall) ;
   font-size: var(--text-small);
@@ -170,3 +172,5 @@ padding-left: 25rem;
   padding: var(--spacing-xxsmall);
   font-size: var(--text-xsmall);
 }
+
+/*  Cursos */
