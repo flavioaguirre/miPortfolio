@@ -7,6 +7,9 @@ img {
   width: 100%;
   display: block;
 }
+body {
+  background-color: #000;
+}
 
 /* ---------- Fin normalize CSS */
 
@@ -108,13 +111,15 @@ transition: all 0.2s ease-in-out;
 .main-index {
   min-height: 100vh;
   background-image: url(./img/bg-index.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .container-index__section {
-padding-left: 30rem;
+padding-left: 25rem;
 }
 .index-section__h1 {
-  margin: var(--spacing-small) 0 0 8rem;
+  padding-right: 5rem;
+  margin: 10rem 0 0 10rem;
   max-width: 80%;
   border-left: 1px solid var(--text-color);
   color: var(--text-color);
@@ -135,3 +140,33 @@ padding-left: 30rem;
   font-weight: bold;
 }
 
+/* main Sobre mí */
+.main-sobre-mi {
+  background: linear-gradient(0deg, rgba(116,121,126,1) 0%, rgba(0,0,0,0.9199539312795431) 25%);
+  color: var(--text-color);
+  font-family: var(--font-principal);
+  padding: var(--spacing-xsmall);
+}
+.sobre-mi-section__h1 {
+  margin: var(--spacing-xsmall) ;
+  font-size: var(--text-small);
+  border-bottom: 2px solid var(--text-color);
+  padding-bottom: var(--spacing-xxsmall);
+  text-align: center;
+}
+.person-circle-modif {
+  padding: var(--spacing-xxsmall);
+  width: 12rem;
+  justify-content: center;
+  background-color: var(--background-botom2);
+  border-radius: var(--spacing-large);
+  float: center;
+}
+.cloud-arrow-down-modif {
+  height: var(--spacing-small);
+}
+.section-sobre-mi__div {
+  margin-top: var(--spacing-small);
+  padding: var(--spacing-xxsmall);
+  font-size: var(--text-xsmall);
+}

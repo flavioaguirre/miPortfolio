@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- CSS local -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
     <!-- CSS only -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Flavio Aguirre || Desarrolador web</title>
@@ -35,15 +35,15 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav-modif navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item nav-item-modif">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link nav-link-modif" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link nav-link-modif dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Acerca de
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="./pages/sobre-mi.html">Sobre mí</a></li>
+                                <li><a class="dropdown-item active" href="./sobre-mi.html">Sobre mí</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -51,7 +51,7 @@
                             </ul>
                         </li>
                         <li class="nav-item nav-item-modif"">
-                            <a class=" nav-link nav-link-modif" href="#">Portfolio</a>
+                                <a class=" nav-link nav-link-modif" href="#">Portfolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-link-modif" href="#">Contacto</a>
@@ -74,21 +74,46 @@
     <!-- Fin header -->
 
     <!-- Comienzo main -->
-    <main class="main-index">
-        <section class="container container-index__section">
-            <div class="row col-md-12">
-                <h1 class="index-section__h1 animate__animated animate__slideInDown"><span class="nombre-index">Soy Flavio Aguirre</span> Desarrolador web</h1>
+    <main class="main-sobre-mi">
+        <section class="sobre-mi__section">
+            <h1 class="animate__animated animate__rubberBand sobre-mi-section__h1 d-flex justify-content-center">
+                Sobre mí</h1>
+            <div class="container d-flex justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    class="bi bi-person-circle person-circle-modif" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
             </div>
-            <div class="container animate__animated animate__slideInUp">
-                <div class="row col-md-12">
-                    <p class="index-section__p">"La educacíon es el pasaporte hacía el futuro, el mañana pertenece a
-                        aquellos que se preparan para él en el día de hoy." </p>
-                    <p class="index-section__p">~Malcolm X~</p>
-                </div>
+            <div class="section-sobre-mi__div">
+                <p class="section-sobre-mi__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                    doloremque explicabo
+                    eum, corporis nulla nisi esse tempora sit voluptatem veniam impedit temporibus, magni similique nam
+                    repudiandae officia quisquam? Nam, accusamus?</p>
+                <p class="section-sobre-mi__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eum
+                    ut dolorem ullam quidem
+                    doloremque esse in assumenda vitae ab? Sapiente fugiat consequatur quasi. Quos incidunt debitis quas
+                    adipisci laudantium.
+                </p>
+                <p class="section-sobre-mi__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eum
+                    ut dolorem ullam quidem
+                    doloremque esse in assumenda vitae ab? Sapiente fugiat consequatur quasi. Quos incidunt debitis quas
+                    adipisci laudantium.
+                </p>
+            </div>
+            <div class="container d-flex justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    class="bi bi-cloud-arrow-down cloud-arrow-down-modif" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708l2 2z" />
+                    <path
+                        d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z" />
+                </svg>
             </div>
         </section>
     </main>
-    <!-- Fin main -->
+    <!-- fin main -->
 
     <!-- Comienzo footer -->
     <footer class="footer">
@@ -161,13 +186,11 @@
     </footer>
     <!-- Fin footer -->
 
-
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
 
 </body>
-
 
 </html>
