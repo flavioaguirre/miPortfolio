@@ -148,14 +148,21 @@ padding-left: 25rem;
   padding: var(--spacing-xsmall);
 }
 
-/*  Sobre mí */
-.sobre-mi-section__h1 {
+/*------ Section pages */
+.section-page {
+  margin-top: var(--spacing-medium);
+}
+
+/*------ H1 pages */
+.main-titles__h1 {
   margin: var(--spacing-xsmall) ;
   font-size: var(--text-small);
   border-bottom: 2px solid var(--text-color);
-  padding-bottom: var(--spacing-xxsmall);
+  padding-bottom: 1.5rem;
   text-align: center;
 }
+
+/* --- Sobre mí */
 .person-circle-modif {
   padding: var(--spacing-xxsmall);
   width: 12rem;
@@ -173,4 +180,26 @@ padding-left: 25rem;
   font-size: var(--text-xsmall);
 }
 
-/*  Cursos */
+/* ---- Cursos */
+.containerTitles__p {
+  font-size: var(--text-xsmall);
+  padding-bottom: var(--spacing-xsmall);
+  text-align: center;
+}
+.sub-titles__h2 {
+  padding-top: var(--spacing-xsmall);
+}
+/* Group Cards */
+.card-body-modif--GCard {
+  color: var(--color-dark);
+}
+.card-title-cursos {
+  color: var(--background-botom2);
+}
+.card-text-cursos {
+  font-family: var(--font-principal);
+  line-height: normal;
+}
+/* End of Group Cards */
+
+/* ---- Portfolio */
