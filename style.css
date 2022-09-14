@@ -247,6 +247,7 @@ padding-left: 25rem;
 /*---------- Media Queries  */
 
 @media only screen and (max-width:992px) {
+  /* index  */
   .index-section__h1 {
     padding-right: 5rem;
     margin: 9rem 0 0 8rem;
@@ -310,5 +311,13 @@ padding-left: 25rem;
 }
 
 @media only screen and (max-width:576px) {
-
+  /* index */
+  .index-section__h1 {
+  margin: 0;
+  }
+/*------ H1 pages */
+.main-titles__h1 {
+  font-size: var(--text-base);
+  text-align: center;
+}
 }
