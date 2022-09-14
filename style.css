@@ -10,17 +10,20 @@ img {
 body {
   background-color: #000;
 }
+a {
+  text-decoration: none;
+  font-style: inherit;
+}
 
 /* ---------- Fin normalize CSS */
 
 /*----------- VariablesCSS */
 :root {
   /*-- colors-- */
-  --color-dark: #01030d;
-  --shadows-color: rgba(0, 0, 0, 0.449);
-  --background-header: #74797e3e;
-  --background-footer: #222126;
   --text-color: #f2f2f2;
+  --text-color-alter: #24303c;
+  --color-dark: #01030d;
+  --background-footer: #222126;
   --background-botom: #116ebf;
   --background-botom2: #138af2;
 
@@ -125,11 +128,9 @@ padding-left: 25rem;
   color: var(--text-color);
   font-size: 3rem;
   text-align: center;
-  text-shadow: .4375rem .8125rem 2.3125rem var(--color-oscuro);
 }
 .nombre-index {
   font-size: 3.5rem;
-  text-shadow: .4375rem .8125rem 2.3125rem var(--color-oscuro);
 }
 .index-section__p {
   padding-top: var(--spacing-xsmall);
@@ -203,3 +204,82 @@ padding-left: 25rem;
 /* End of Group Cards */
 
 /* ---- Portfolio */
+/* Cards */
+.card-portfolio {
+  border: #000 solid 1px;
+  padding: 3%;
+  background-color: #24303c;
+}
+.card-portfolio:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out .3s;
+  cursor: pointer;
+}
+.card-portfolio-body {
+  margin-top: 2%;
+  color: var(--color-dark);
+  background-color: var(--background-botom);
+  border-radius: 0 0 1rem 1rem;
+}
+.card-text-small {
+  color: var(--text-color-alter);
+}
+.row-portfolio {
+  gap: var(--spacing-medium);
+}
+/* End of cards */
+.portfolio-git__p {
+  font-size: var(--text-xsmall);
+  gap: 1%;
+  text-align: center;
+}
+.portfolio-git__a {
+  color: var(--text-color);
+}
+
+/*----- Contacto*/
+.btn-form {
+  margin: var(--spacing-xsmall);
+}
+
+/*---------- Fin Contenido General  */
+
+/*---------- Media Queries  */
+
+@media only screen and (max-width:992px) {
+
+}
+
+@media only screen and (max-width:768px) {
+  /* index */
+  .main-index {
+    background: linear-gradient(0deg, rgba(116,121,126,1) 0%, rgba(0,0,0,0.9199539312795431) 25%);
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100vh;
+    font-size: var(--text-xsmall);
+  }
+  .index-section__h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width:576px) {
+  /* index */
+  .main-index {
+    background: linear-gradient(0deg, rgba(116,121,126,1) 0%, rgba(0,0,0,0.9199539312795431) 25%);
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100vh;
+    font-size: var(--text-xsmall);
+  }
+  .index-section__h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
