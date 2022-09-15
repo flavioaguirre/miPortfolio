@@ -311,6 +311,11 @@ padding-left: 25rem;
 }
 
 @media only screen and (max-width:576px) {
+  /* header */
+  .nav-link-modif:hover {
+    color: var(--text-color);
+    transform: none;
+  }
   /* index */
   .index-section__h1 {
   margin: 0;
