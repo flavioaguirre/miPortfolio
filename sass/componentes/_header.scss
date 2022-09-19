@@ -1,0 +1,36 @@
+body {
+    header {
+        .code-slash-modif {
+            color: $text-color;
+            margin-right: 0.5rem;
+        }
+        .navbar-nav-modif {
+            margin: 0 auto;
+            gap: $spacing-xsmall;
+            font-family: $font-principal;
+        }
+        .navbar-nav .nav-link.active,
+        .navbar-nav .show > .nav-link {
+            color: $bg-botom;
+        }
+        .btn-outline-success {
+            color: $bg-botom;
+            border-color: $bg-botom;
+        }
+        .dropdown-item:focus,
+        .dropdown-item:hover {
+            background-color: $bg-botom;
+        }
+        .nav-link-modif:hover {
+            color: $text-color;
+            transform: scale(1.2);
+            transition: all 0.2s ease-in-out;
+        }
+        .btn:first-child:hover,
+        :not(.btn-check) + .btn:hover {
+            background-color: $bg-botom;
+            border-color: $bg-botom;
+            color: $text-color;
+        }
+    }
+}
