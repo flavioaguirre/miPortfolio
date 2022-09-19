@@ -241,35 +241,43 @@ body footer ul .resize-svg:hover {
     font-size: 1rem;
     max-width: 100%;
   }
-  body .row-cards-group {
+  body .main-pages .section-page .main-titles__h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 2em 0;
+  }
+  body .main-pages .section-page .row-cards-group {
     display: flex;
     flex-direction: column;
     row-gap: 3rem;
   }
-  body .sub-titles__h2 {
+  body .main-pages .section-page .sub-titles__h2 {
     text-align: center;
   }
-  body .portfolio-git__p {
+  body .main-pages .section-page .sub-titles__p {
+    text-align: center;
+  }
+  body .main-pages .section-page .portfolio-git__p {
     display: flex;
     flex-direction: column;
   }
   body footer ul {
-    gap: 1.4rem;
+    gap: 1.8rem;
     margin-right: 2rem;
   }
   body footer ul .resize-svg {
-    width: 1.3rem;
+    width: 1.5rem;
   }
 }
 @media only screen and (max-width: 576px) {
-  body main .index-section__h1 {
-    margin: 0;
-  }
-  body main .main-titles__h1 {
-    font-size: 1.9rem;
+  body .main-pages .section-page .main-titles__h1 {
+    font-size: 2rem;
     text-align: center;
+    width: 100%;
+    margin: 0 0 2em 0;
   }
-  body main .row-cards-group {
+  body .main-pages .section-page .row-cards-group {
     display: flex;
     flex-direction: column;
   }

@@ -283,7 +283,16 @@ body {
                 }
             }
         }
-            // section-pages
+        // section-pages
+        .main-pages {
+            .section-page {
+                // h1 pages
+                .main-titles__h1 {
+                    font-size: 2.2rem;
+                    text-align: center;
+                    width: 100%;
+                    margin: 0 0 2em 0;
+                }
                 // Cursos  
                 .row-cards-group {
                     display: flex;
@@ -293,18 +302,23 @@ body {
                 .sub-titles__h2  {
                     text-align: center;
                 }
+                .sub-titles__p {
+                    text-align: center;
+                }
                 // Portfolio
                 .portfolio-git__p {
                     display: flex;
                     flex-direction: column;
                 }
+            }
+        }
         // footer
         footer {
             ul {
-                gap: 1.4rem;
+                gap: 1.8rem;
                 margin-right: 2rem;
                 .resize-svg {
-                    width: 1.3rem;
+                    width: 1.5rem;
                 }
             }
         }
@@ -312,20 +326,20 @@ body {
 }
 @media only screen and (max-width: 576px) {
     body {
-        main {
-            // index
-            .index-section__h1 {
-                margin: 0;
-            }
-            // h1 pages
-            .main-titles__h1 {
-                font-size: 1.9rem;
-                text-align: center;
-            }
-            // Cursos
-            .row-cards-group {
-                display: flex;
-                flex-direction: column;
+        .main-pages {
+            .section-page {
+                // h1 pages
+                .main-titles__h1 {
+                    font-size: 2rem;
+                    text-align: center;
+                    width: 100%;
+                    margin: 0 0 2em 0;
+                }
+                // Cursos
+                .row-cards-group {
+                    display: flex;
+                    flex-direction: column;
+                }
             }
         }
     }
