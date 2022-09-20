@@ -1,21 +1,34 @@
+@media only screen and (max-width: 1200px) {
+    body {
+        .main-index {
+            .container-index__section {
+                margin-left: 3.5em;
+                .index-section__h1 {
+                    padding: 0;
+                    font-size: 2.8rem;
+                    .nombre-index {
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
 @media only screen and (max-width: 992px) {
     body {
-        // main
-        main {
-            // index
+        .main-index {
             .container-index__section {
-                padding-left: 20rem;
-                font-size: $text-xsmall;
+                width: 70%;
+                padding: 1rem 2rem 0 1rem;
+                margin: $spacing-large 0 0 7em;
                 .index-section__h1 {
-                    padding-right: $spacing-medium;
-                    margin: 9rem 0 0 8rem;
-                    max-width: 100%;
                     border-left: 1px solid $text-color;
-                    color: $text-color;
-                    font-size: $text-base;
-                    text-align: center;
+                    margin-left: $spacing-xlarge;
+                    font-size: 2rem;
+                    display: flex;
+                    flex-direction: column;
                     .nombre-index {
-                        font-size: $text-base;
+                        font-size: 2.3rem;
                     }
                 }
             }
@@ -106,9 +119,19 @@
 }
 @media only screen and (max-width: 576px) {
     body {
+        .main-index {
+            .container-index__section {
+                margin-left: 2.7em;
+                .index-section__p {
+                    margin-left: $spacing-xxsmall;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
         .main-pages {
+            padding: 3%;
             .section-page {
-                // h1 pages
                 .main-titles__h1 {
                     font-size: $text-base;
                     text-align: center;
