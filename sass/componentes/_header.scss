@@ -1,36 +1,39 @@
 body {
     header {
+        nav {
+            background-color: map-get($header, bg-header);
+        }
         .code-slash-modif {
-            color: $text-color;
+            color: map-get($header, text-color);
             margin-right: 0.5rem;
         }
         .navbar-nav-modif {
             margin: 0 auto;
-            gap: $spacing-xsmall;
-            font-family: $font-principal;
+            gap: map-get($header, spacing);
+            font-family: map-get($header, font-family);
         }
         .navbar-nav .nav-link.active,
         .navbar-nav .show > .nav-link {
-            color: $bg-botom;
+            color: map-get($header, bg-buton);
         }
         .btn-outline-success {
-            color: $bg-botom;
-            border-color: $bg-botom;
+            color: map-get($header, bg-buton);
+            border-color: map-get($header, bg-buton);
         }
         .dropdown-item:focus,
         .dropdown-item:hover {
-            background-color: $bg-botom;
+            background-color: map-get($header, bg-buton);
         }
         .nav-link-modif:hover {
-            color: $text-color;
+            color: map-get($header, text-color);
             transform: scale(1.2);
             transition: all 0.2s ease-in-out;
         }
         .btn:first-child:hover,
         :not(.btn-check) + .btn:hover {
-            background-color: $bg-botom;
-            border-color: $bg-botom;
-            color: $text-color;
+            background-color: map-get($header, bg-buton);
+            border-color: map-get($header, bg-buton);
+            color: map-get($header, text-color);
         }
     }
 }

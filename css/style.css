@@ -35,6 +35,9 @@ body footer ul .resize-svg:hover {
   transition: all 0.2s ease-in-out;
 }
 
+body header nav {
+  background-color: #000;
+}
 body header .code-slash-modif {
   color: #f2f2f2;
   margin-right: 0.5rem;
