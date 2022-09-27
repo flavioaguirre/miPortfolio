@@ -81,8 +81,7 @@
             .section-page {
                 // h1 pages
                 .main-titles__h1 {
-                    font-size: $text-base;
-                    text-align: center;
+                    @include text(1.5rem, center);
                     width: 100%;
                     margin: 0 0 $spacing-xsmall 0;
                 }
@@ -133,8 +132,7 @@
             padding: 3%;
             .section-page {
                 .main-titles__h1 {
-                    font-size: $text-base;
-                    text-align: center;
+                    @include text(1.5rem, center);
                     width: 100%;
                     margin: 0 0 $spacing-xsmall 0;
                 }
