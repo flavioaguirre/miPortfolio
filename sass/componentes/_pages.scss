@@ -12,10 +12,9 @@ body {
             margin-top: $spacing-medium;
             .main-titles__h1 {
                 margin: $spacing-xsmall;
-                font-size: $text-small;
+                @include text(3em, center);
                 border-bottom: 2px solid $text-color;
-                padding-bottom: $spacing-xxsmall;
-                text-align: center;
+                padding-bottom: $spacing-xxsmall;              
             }
 
             // Sobre mí
@@ -29,19 +28,20 @@ body {
             }
             .cloud-arrow-down-modif {
                 height: $spacing-small;
+                &:hover {
+                    @extend %hover-animations;
+                }
             }
             .section-sobre-mi__div {
                 margin-top: $spacing-small;
                 padding: $spacing-xxsmall;
-                font-size: $text-xsmall;
-                text-align: center;
+                @include text(2em, center);
             }
 
             // Cursos
             .containerTitles__p {
-                font-size: $text-xsmall;
+                @include text(2em, center);
                 padding-bottom: $spacing-xsmall;
-                text-align: center;
             }           
             .sub-titles__h2 {
                 padding-top: $spacing-xsmall;
@@ -79,9 +79,8 @@ body {
                 gap: $spacing-medium;
             }
             .portfolio-git__p {
-                font-size: $text-xsmall;
+                @include text(2em, center);
                 gap: 1%;
-                text-align: center;
             }
             .portfolio-git__a {
                 color: $text-color;
