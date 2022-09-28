@@ -12,7 +12,7 @@ body {
             margin-top: $spacing-medium;
             .main-titles__h1 {
                 margin: $spacing-xsmall;
-                @include text(3em, center);
+                @include text(3rem, center);
                 border-bottom: 2px solid $text-color;
                 padding-bottom: $spacing-xxsmall;              
             }
@@ -86,7 +86,7 @@ body {
                 gap: $spacing-medium;
             }
             .portfolio-git__p {
-                @include text(2em, center);
+                @include text(1.5rem, center);
                 gap: 1%;
             }
             .portfolio-git__a {

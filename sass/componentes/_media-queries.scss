@@ -43,6 +43,9 @@
     body {
         // header
         header {
+            nav {
+                background-color: $bg-footer;
+            }
             .nav-link-modif:hover {
                 color: $bg-botom;
                 transform: none;
@@ -81,7 +84,7 @@
             .section-page {
                 // h1 pages
                 .main-titles__h1 {
-                    @include text(1.5rem, center);
+                    @include text(1.8rem, center);
                     width: 100%;
                     margin: 0 0 $spacing-xsmall 0;
                 }
@@ -132,7 +135,7 @@
             padding: 3%;
             .section-page {
                 .main-titles__h1 {
-                    @include text(1.5rem, center);
+                    @include text(1.8rem, center);
                     width: 100%;
                     margin: 0 0 $spacing-xsmall 0;
                 }
