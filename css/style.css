@@ -1,6 +1,6 @@
-body .main-pages .section-page .btn-form:hover, body .main-pages .section-page .portfolio-git__a:hover, body .main-pages .section-page .card-portfolio:hover, body .main-pages .section-page .cloud-arrow-down-modif:hover, body header .nav-link-modif:hover, body footer ul .resize-svg:hover {
+body .main-pages .section-page .btn-form:hover, body .main-pages .section-page .portfolio-git__a:hover, body .main-pages .section-page .card-portfolio:hover, body .main-pages .section-page .card-footer .btn-cursos:hover, body .main-pages .section-page .cloud-arrow-down-modif:hover, body header .nav-link-modif:hover, body footer ul .resize-svg:hover {
   transform: scale(1.1);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
@@ -122,7 +122,6 @@ body .main-pages .section-page .person-circle-modif {
   justify-content: center;
   background-color: #138af2;
   border-radius: 13em;
-  float: center;
 }
 body .main-pages .section-page .cloud-arrow-down-modif {
   height: 3em;
@@ -130,11 +129,11 @@ body .main-pages .section-page .cloud-arrow-down-modif {
 body .main-pages .section-page .section-sobre-mi__div {
   margin-top: 3em;
   padding: 1em;
-  font-size: 2em;
+  font-size: 1.6rem;
   text-align: center;
 }
 body .main-pages .section-page .containerTitles__p {
-  font-size: 2em;
+  font-size: 1.6rem;
   text-align: center;
   padding-bottom: 2em;
 }
@@ -150,6 +149,10 @@ body .main-pages .section-page .card-title-cursos {
 body .main-pages .section-page .card-text-cursos {
   font-family: sans-serif;
   line-height: normal;
+}
+body .main-pages .section-page .sub-titles__p {
+  font-size: 1.2rem;
+  text-align: center;
 }
 body .main-pages .section-page .card-portfolio {
   border: #01030d solid 1px;

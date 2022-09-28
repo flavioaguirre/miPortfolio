@@ -24,7 +24,6 @@ body {
                 justify-content: center;
                 background-color: $bg-botom2;
                 border-radius: $spacing-xxlarge;
-                float: center;
             }
             .cloud-arrow-down-modif {
                 height: $spacing-small;
@@ -35,12 +34,12 @@ body {
             .section-sobre-mi__div {
                 margin-top: $spacing-small;
                 padding: $spacing-xxsmall;
-                @include text(2em, center);
+                @include text(1.6rem, center);
             }
 
             // Cursos
             .containerTitles__p {
-                @include text(2em, center);
+                @include text(1.6rem, center);
                 padding-bottom: $spacing-xsmall;
             }           
             .sub-titles__h2 {
@@ -55,6 +54,14 @@ body {
             .card-text-cursos {
                 font-family: $font-principal;
                 line-height: normal;
+            }
+            .card-footer {
+                .btn-cursos:hover {
+                    @extend %hover-animations;
+                }
+            }
+            .sub-titles__p {
+                @include text (1.2rem, center);
             }
 
             // Portfolio
