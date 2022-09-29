@@ -39,12 +39,23 @@ body footer ul .resize-svg {
 body header nav {
   background-color: #000;
 }
+body header .container-nav {
+  margin: 0 10em 0 5em;
+}
 body header .code-slash-modif {
   color: #f2f2f2;
   margin-right: 0.5rem;
 }
+body header .navbar-collapse-menu {
+  display: flex;
+  flex-direction: row-reverse;
+}
+body header .navbar-collapse-menu .form {
+  display: flex;
+  justify-content: center;
+  margin-right: 8em;
+}
 body header .navbar-nav-modif {
-  margin: 0 auto;
   gap: 2em;
   font-family: sans-serif;
 }
@@ -78,27 +89,32 @@ body .main-index {
 }
 body .main-index .container-index__section {
   margin-left: 3em;
-  padding: 8em 10em 13em 10em;
+  padding: 8em 10em 13em 18em;
 }
 body .main-index .container-index__section .index-section__h1 {
   padding: 0 6rem 0 2rem;
-  margin-left: 7.3em;
+  margin-left: 7.5em;
   max-width: 78%;
   border-left: 1px solid #f2f2f2;
   color: #f2f2f2;
-  font-size: 3rem;
+  font-size: 2.4rem;
   text-align: center;
 }
 body .main-index .container-index__section .index-section__h1 .nombre-index {
-  font-size: 3.5rem;
+  font-size: 2.8rem;
+  text-align: center;
 }
 body .main-index .container-index__section .index-section__p {
   padding: 1em 1em 0 0;
-  margin-left: 16em;
+  margin-left: 11em;
   color: #f2f2f2;
-  width: 92%;
+  width: 100%;
   text-align: center;
   font-weight: bold;
+}
+body .main-index .container-index__section .icon-ul {
+  margin: 3em 0 0 10em;
+  gap: 3em;
 }
 
 body .main-pages {
@@ -184,7 +200,7 @@ body .main-pages .section-page .btn-form {
 }
 @media only screen and (max-width: 1200px) {
   body .main-index .container-index__section {
-    margin-left: 3.5em;
+    margin-left: 4.5em;
   }
   body .main-index .container-index__section .index-section__h1 {
     padding: 0;

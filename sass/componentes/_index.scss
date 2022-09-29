@@ -6,26 +6,29 @@ body {
         background-repeat: no-repeat;
         .container-index__section {
             margin-left: $spacing-small;
-            padding: $spacing-large $spacing-xlarge $spacing-xxlarge $spacing-xlarge;
+            padding: $spacing-large $spacing-xlarge $spacing-xxlarge 18em;
             .index-section__h1 {
                 padding: 0 6rem 0 2rem;
-                margin-left: 7.3em;
+                margin-left: 7.5em;
                 max-width: 78%;
                 border-left: 1px solid $text-color;
                 color: $text-color;
-                font-size: 3rem;
-                text-align: center;
+                @include text (2.4rem, center);
                 .nombre-index {
-                    font-size: 3.5rem;
+                    @include text (2.8rem, center);
                 }
             }
             .index-section__p {
                 padding: $spacing-xxsmall $spacing-xxsmall 0 0;
-                margin-left: 16em;
+                margin-left: 11em;
                 color: $text-color;
-                width: 92%;
+                width: 100%;
                 text-align: center;
                 font-weight: bold;
+            }
+            .icon-ul {
+                margin: $spacing-small 0 0 $spacing-xlarge;
+                gap: $spacing-small;
             }
         }
     }

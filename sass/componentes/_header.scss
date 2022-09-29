@@ -3,12 +3,23 @@ body {
         nav {
             background-color: map-get($header, bg-header);
         }
+        .container-nav {
+            margin: 0 $spacing-xlarge 0 $spacing-medium;
+        }
         .code-slash-modif {
             color: map-get($header, text-color);
             margin-right: 0.5rem;
         }
+        .navbar-collapse-menu {
+            display: flex;
+            flex-direction: row-reverse;
+            .form {
+                display: flex;
+                justify-content: center;
+                margin-right: $spacing-large;
+            }
+        }
         .navbar-nav-modif {
-            margin: 0 auto;
             gap: map-get($header, spacing);
             font-family: map-get($header, font-family);
         }
