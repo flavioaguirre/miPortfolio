@@ -4,13 +4,16 @@ body {
         background-image: url(../img/bg-index.jpg);
         background-size: contain;
         background-repeat: no-repeat;
+        overflow: hidden;
         .container-index__section {
+            padding: 6.5em;
             margin-left: $spacing-small;
-            padding: $spacing-large $spacing-xlarge $spacing-xxlarge 18em;
             .index-section__h1 {
-                padding: 0 6rem 0 2rem;
-                margin-left: 7.5em;
-                max-width: 78%;
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                padding: .3em;
+                margin-left: 12em;
                 border-left: 1px solid $text-color;
                 color: $text-color;
                 @include text (2.4rem, center);
@@ -19,15 +22,15 @@ body {
                 }
             }
             .index-section__p {
-                padding: $spacing-xxsmall $spacing-xxsmall 0 0;
-                margin-left: 11em;
+                padding:  1em;
+                margin-left: 22em;
                 color: $text-color;
-                width: 100%;
+                width: 70%;
                 text-align: center;
                 font-weight: bold;
             }
             .icon-ul {
-                margin: $spacing-small 0 0 $spacing-xlarge;
+                margin:$spacing-xsmall $spacing-xsmall 0 0;
                 gap: $spacing-small;
             }
         }

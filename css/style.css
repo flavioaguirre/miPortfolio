@@ -40,7 +40,7 @@ body header nav {
   background-color: #000;
 }
 body header .container-nav {
-  margin: 0 10em 0 5em;
+  margin: 0 8em 0 3em;
 }
 body header .code-slash-modif {
   color: #f2f2f2;
@@ -86,15 +86,18 @@ body .main-index {
   background-image: url(../img/bg-index.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 body .main-index .container-index__section {
+  padding: 6.5em;
   margin-left: 3em;
-  padding: 8em 10em 13em 18em;
 }
 body .main-index .container-index__section .index-section__h1 {
-  padding: 0 6rem 0 2rem;
-  margin-left: 7.5em;
-  max-width: 78%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0.3em;
+  margin-left: 12em;
   border-left: 1px solid #f2f2f2;
   color: #f2f2f2;
   font-size: 2.4rem;
@@ -105,15 +108,15 @@ body .main-index .container-index__section .index-section__h1 .nombre-index {
   text-align: center;
 }
 body .main-index .container-index__section .index-section__p {
-  padding: 1em 1em 0 0;
-  margin-left: 11em;
+  padding: 1em;
+  margin-left: 22em;
   color: #f2f2f2;
-  width: 100%;
+  width: 70%;
   text-align: center;
   font-weight: bold;
 }
 body .main-index .container-index__section .icon-ul {
-  margin: 3em 0 0 10em;
+  margin: 2em 2em 0 0;
   gap: 3em;
 }
 
@@ -194,6 +197,9 @@ body .main-pages .section-page .portfolio-git__p {
 }
 body .main-pages .section-page .portfolio-git__a {
   color: #f2f2f2;
+}
+body .main-pages .section-page form {
+  color: grey;
 }
 body .main-pages .section-page .btn-form {
   margin: 2em;

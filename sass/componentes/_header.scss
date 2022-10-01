@@ -4,7 +4,7 @@ body {
             background-color: map-get($header, bg-header);
         }
         .container-nav {
-            margin: 0 $spacing-xlarge 0 $spacing-medium;
+            margin: 0 $spacing-large 0 $spacing-small;
         }
         .code-slash-modif {
             color: map-get($header, text-color);

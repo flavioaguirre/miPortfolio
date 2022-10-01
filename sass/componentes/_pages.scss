@@ -97,6 +97,9 @@ body {
             }
 
             // Contacto
+            form {
+                color: grey;
+            }
             .btn-form {
                 margin: $spacing-xsmall;
                 &:hover {
