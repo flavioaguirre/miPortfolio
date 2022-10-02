@@ -9,9 +9,9 @@ body {
         padding: $spacing-small;
 
         .section-page {
-            margin-top: $spacing-medium;
+            margin-top: $spacing-small;
             .main-titles__h1 {
-                margin: $spacing-xsmall;
+                margin: $spacing-xxsmall;
                 @include text(3rem, center);
                 border-bottom: 2px solid $text-color;
                 padding-bottom: $spacing-xxsmall;              
@@ -19,11 +19,12 @@ body {
 
             // Sobre mí
             .person-circle-modif {
+                margin-top: $spacing-xsmall;
                 padding: $spacing-xxsmall;
-                width: $spacing-xxlarge;
+                max-width: 100vh;
                 justify-content: center;
-                background-color: $bg-botom2;
-                border-radius: $spacing-xxlarge;
+                background-color: $bg-footer;
+                border-radius: 5rem;
             }
             .cloud-arrow-down-modif {
                 height: $spacing-small;
@@ -98,7 +99,7 @@ body {
 
             // Contacto
             form {
-                color: grey;
+                color: rgb(128, 128, 128);
             }
             .btn-form {
                 margin: $spacing-xsmall;

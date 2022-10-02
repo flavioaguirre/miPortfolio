@@ -30,8 +30,13 @@ body {
                 font-weight: bold;
             }
             .icon-ul {
-                margin:$spacing-xsmall $spacing-xsmall 0 0;
+                margin:$spacing-xsmall $spacing-small 0 0;
                 gap: $spacing-small;
+                .resize-svg {
+                    &:hover {
+                        @extend %hover-animations;
+                    }
+                }
             }
         }
     }
