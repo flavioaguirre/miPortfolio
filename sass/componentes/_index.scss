@@ -7,7 +7,7 @@ body {
         overflow: hidden;
         .container-index__section {
             padding: 6.5em;
-            margin-left: $spacing-small;
+            margin-left: $spacing-medium;
             .index-section__h1 {
                 display: flex;
                 flex-direction: column;
@@ -30,7 +30,7 @@ body {
                 font-weight: bold;
             }
             .icon-ul {
-                margin:$spacing-xsmall $spacing-small 0 0;
+                margin:$spacing-xsmall 0 0 27em;
                 gap: $spacing-small;
                 .resize-svg {
                     &:hover {

@@ -100,6 +100,10 @@ body {
             // Contacto
             form {
                 color: rgb(128, 128, 128);
+                .form-check {
+                    padding-top: $spacing-xsmall;
+                    margin-left: .1em;
+                }
             }
             .btn-form {
                 margin: $spacing-xsmall;

@@ -7,6 +7,10 @@ body {
         padding: map-get($footer, spacing-1) 0 .8em 0;
         overflow: hidden;
         background-color: map-get($footer, bg-footer);
+        .title-footer {
+            display: flex;
+            justify-content: center;
+        }
         ul {
             gap: map-get($footer, spacing-2);
             .resize-svg {

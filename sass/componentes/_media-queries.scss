@@ -1,14 +1,23 @@
 @media only screen and (max-width: 1200px) {
     body {
         .main-index {
+            max-width: 100%;
             .container-index__section {
-                margin-left: 4.5em;
+                min-height: 100vh;
                 .index-section__h1 {
-                    padding: 0;
-                    font-size: 2.8rem;
+                    margin-left: 14em;
+                    max-width: 70%;
+                    @include text (2rem, center);
                     .nombre-index {
-                        font-size: 3rem;
+                        @include text (2.3rem, center);
                     }
+                }
+                .index-section__p {
+                    max-width: 70%;
+                    margin-left: 23em;
+                }
+                .icon-ul {
+                    margin:$spacing-xsmall 0 0 24em;
                 }
             }
         }
@@ -16,20 +25,31 @@
 }
 @media only screen and (max-width: 992px) {
     body {
+        header {
+            nav {
+                background-color: map-get($header, bg-header);
+            }
+            .container-nav {
+                margin: 0 $spacing-xsmall 0 $spacing-small;
+            }
+        }
         .main-index {
             .container-index__section {
-                width: 70%;
+                width: 100%;
                 padding: 1rem 2rem 0 1rem;
-                margin: $spacing-large 0 0 7em;
+                margin: $spacing-medium 0 0 3em;
                 .index-section__h1 {
-                    border-left: 1px solid $text-color;
-                    margin-left: $spacing-xlarge;
+                    margin-left: 12.5em;
                     font-size: 2rem;
-                    display: flex;
-                    flex-direction: column;
                     .nombre-index {
                         font-size: 2.3rem;
                     }
+                }
+                .index-section__p {
+                    margin-left: 20em;
+                }
+                .icon-ul {
+                    margin:$spacing-xsmall 0 0 18em;
                 }
             }
         }
@@ -41,7 +61,6 @@
 }
 @media only screen and (max-width: 768px) {
     body {
-        // header
         header {
             nav {
                 background-color: $bg-footer;
@@ -51,29 +70,32 @@
                 transform: none;
             }
         }
-        // index
         .main-index {
             background-image: url(../img/bg-index-mobile.jpg);
             background-size: cover;
             overflow-x: hidden;
             font-size: $text-xsmall;
+            .container-icon {
+                display: none;
+            }
             .container-index__section {
                 padding: $spacing-medium 0 $spacing-medium 0;
-                margin-top: $spacing-xxsmall;
                 .index-section__h1 {
+                    max-width: 100%;
                     font-size: $text-base;
                     display: flex;
                     flex-direction: column;
-                    margin: 0 0 0 2.2rem;
+                    margin: 0 0 0 5.2em;
                     border: 0;
                     border-bottom: 1px solid #f2f2f2;
                     padding: 3%;
                     .nombre-index {
                         font-size: 2.3rem;
+                        max-width: 100%;
                     }
                 }
                 .index-section__p {
-                    margin: 0;
+                    margin: 0 0 0 4em;
                     font-size: 1rem;
                     max-width: 100%;
                 }
@@ -107,13 +129,18 @@
                 }
             }
         }
-        // footer
         footer {
+            .title-footer {
+                display: none;
+            }
             ul {
                 gap: $spacing-xsmall;
                 margin-right: $spacing-xsmall;
-                .resize-svg {
-                    width: $text-xsmall;
+                .footerConteinerUl__li-index {
+                    display: initial;
+                    .resize-svg {
+                        width: $text-xsmall;
+                    }
                 }
             }
         }
@@ -121,12 +148,24 @@
 }
 @media only screen and (max-width: 576px) {
     body {
+        header {
+            nav {
+                background-color: map-get($header, bg-header);
+            }
+            .container-nav {
+                margin: 0 $spacing-xxsmall 0 $spacing-xsmall;
+            }
+        }
         .main-index {
             .container-index__section {
-                margin-left: 2.7em;
+                margin: 0;
+                .index-section__h1 {
+                    margin-left: 4.2em;
+                }
                 .index-section__p {
-                    margin-left: $spacing-xxsmall;
+                    margin-left: 2.5em;
                     font-size: 1.3rem;
+                    padding: 1em .3em;
                 }
             }
         }
@@ -137,7 +176,7 @@
                 .main-titles__h1 {
                     @include text(1.8rem, center);
                     width: 100%;
-                    margin: 0 0 $spacing-xsmall 0;
+                    margin: $spacing-small 0 $spacing-xsmall 0;
                 }
                 // Cursos
                 .row-cards-group {
@@ -146,5 +185,25 @@
                 }
             }
         }
+
+        footer {
+            .title-footer {
+                display: none;
+            }
+            ul {
+                gap: map-get($footer, spacing-2);
+                .resize-svg {
+                    height: map-get($footer, height-icon);
+                        &:hover {
+                            @extend %hover-animations;
+                        }
+                    }
+                }
+                .footerConteinerUl__li-index {
+                    display: initial;
+                
+            }
+        }
     }
 }
+

@@ -4,20 +4,11 @@ body {
             background-color: map-get($header, bg-header);
         }
         .container-nav {
-            margin: 0 $spacing-large 0 $spacing-small;
+            margin: 0 $spacing-medium 0 $spacing-small;
         }
         .code-slash-modif {
             color: map-get($header, text-color);
             margin-right: 0.5rem;
-        }
-        .navbar-collapse-menu {
-            display: flex;
-            flex-direction: row-reverse;
-            .form {
-                display: flex;
-                justify-content: center;
-                margin-right: $spacing-large;
-            }
         }
         .navbar-nav-modif {
             gap: map-get($header, spacing);
