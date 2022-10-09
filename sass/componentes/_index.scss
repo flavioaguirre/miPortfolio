@@ -1,19 +1,24 @@
 body {
     .main-index {
         min-height: 100vh;
-        background-image: url(../img/bg-index.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
         overflow: hidden;
         .container-index__section {
-            padding: 6.5em;
-            margin-left: $spacing-medium;
+            display: flex;
+            margin-top: 10%;
+            .picture {
+                display: flex;
+                align-items: center;
+                .picture-logo {
+                    margin-left: $spacing-medium;
+                    width: 325px;
+                    display: inline-block;
+                }
+            }
             .index-section__h1 {
                 display: flex;
                 flex-direction: column;
-                width: 50%;
-                padding: .3em;
-                margin-left: 12em;
+                width: 42%;
+                margin-left: $spacing-medium;
                 border-left: 1px solid $text-color;
                 color: $text-color;
                 @include text (2.4rem, center);
@@ -21,18 +26,28 @@ body {
                     @include text (2.8rem, center);
                 }
             }
-            .index-section__p {
-                padding:  1em;
-                margin-left: 22em;
-                color: $text-color;
-                width: 70%;
-                text-align: center;
-                font-weight: bold;
+            .row {
+                .container {
+                    .row-index__p {
+                        .index-section__p1, .index-section__p2 {
+                            padding-top:  1em;
+                            margin-left: $spacing-large;
+                            color: $text-color;
+                            width: 50%;
+                            text-align: center;
+                            font-weight: bold;
+                        }
+                        .index-section__p2 {
+                            padding-left: 20em;
+                        }
+                    }
+                }
             }
             .icon-ul {
-                margin:$spacing-xsmall 0 0 27em;
+                margin:$spacing-xsmall 0 0 13em;
                 gap: $spacing-small;
                 .resize-svg {
+                    color: goldenrod;
                     &:hover {
                         @extend %hover-animations;
                     }

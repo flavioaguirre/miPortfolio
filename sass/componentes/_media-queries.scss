@@ -64,10 +64,15 @@
         header {
             nav {
                 background-color: $bg-footer;
-            }
-            .nav-link-modif:hover {
-                color: $bg-botom;
-                transform: none;
+                .nav-link.active {
+                    &:hover {
+                        color: $bg-botom;
+                        transform: none;
+                    }
+                    &::after {
+                        content: none;
+                    }
+                }
             }
         }
         .main-index {

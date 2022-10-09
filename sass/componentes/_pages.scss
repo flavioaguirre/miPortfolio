@@ -69,7 +69,7 @@ body {
             .card-portfolio {
                 border: $color-dark solid 1px;
                 padding: 3%;
-                background-color: $text-color-alter;
+                background-color: none;
                     &:hover {
                         @extend %hover-animations;
                     }
@@ -77,7 +77,7 @@ body {
             .card-portfolio-body {
                 margin-top: 2%;
                 color: $color-dark;
-                background-color: $bg-botom;
+                background-color: gold;
                 border-radius: 0 0 1rem 1rem;
             }
             .card-text-small {
@@ -106,6 +106,10 @@ body {
                 }
             }
             .btn-form {
+                border-color: $color-dark;
+                font-weight: 200;
+                color: #fff;
+                background-color: gold;
                 margin: $spacing-xsmall;
                 &:hover {
                     @extend %hover-animations;

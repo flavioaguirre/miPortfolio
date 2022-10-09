@@ -1,24 +1,27 @@
-body .main-pages .section-page .btn-form:hover, body .main-pages .section-page .portfolio-git__a:hover, body .main-pages .section-page .card-portfolio:hover, body .main-pages .section-page .card-footer .btn-cursos:hover, body .main-pages .section-page .cloud-arrow-down-modif:hover, body .main-index .container-index__section .icon-ul .resize-svg:hover, body header .nav-link-modif:hover, body footer ul .resize-svg:hover {
+body .main-pages .section-page .btn-form:hover, body .main-pages .section-page .portfolio-git__a:hover, body .main-pages .section-page .card-portfolio:hover, body .main-pages .section-page .card-footer .btn-cursos:hover, body .main-pages .section-page .cloud-arrow-down-modif:hover, body .main-index .container-index__section .icon-ul .resize-svg:hover, body header .nav-link:hover, body footer ul .resize-svg:hover {
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+}
+html body {
   background-color: #000;
   color: #f2f2f2;
 }
-body ul {
+html body ul {
   list-style-type: none;
 }
-body img {
-  max-width: 100%;
+html body img {
   width: 100%;
   display: block;
 }
-body a {
+html body a {
   text-decoration: none;
   font-style: inherit;
+  color: goldenrod;
 }
 
 body footer {
@@ -28,9 +31,11 @@ body footer {
   max-width: 100%;
   padding: 1em 0 0.8em 0;
   overflow: hidden;
-  background-color: #222126;
+  background-color: none;
 }
 body footer .title-footer {
+  font-family: monospace;
+  color: gold;
   display: flex;
   justify-content: center;
 }
@@ -50,6 +55,9 @@ body header nav {
 body header .container-nav {
   margin: 0 5em 0 3em;
 }
+body header .container-nav .logo-fa {
+  width: 10%;
+}
 body header .code-slash-modif {
   color: #f2f2f2;
   margin-right: 0.5rem;
@@ -60,43 +68,64 @@ body header .navbar-nav-modif {
 }
 body header .navbar-nav .nav-link.active,
 body header .navbar-nav .show > .nav-link {
-  color: #116ebf;
+  color: gold;
 }
 body header .btn-outline-success {
-  color: #116ebf;
-  border-color: #116ebf;
+  color: gold;
+  border-color: gold;
 }
-body header .dropdown-item:focus,
-body header .dropdown-item:hover {
-  background-color: #116ebf;
+body header .nav-link {
+  position: relative;
 }
-body header .nav-link-modif:hover {
+body header .nav-link:hover {
   color: #f2f2f2;
 }
-body header .btn:first-child:hover,
-body header :not(.btn-check) + .btn:hover {
-  background-color: #116ebf;
-  border-color: #116ebf;
-  color: #f2f2f2;
+body header .nav-link::after {
+  content: "";
+  background-color: #f2f2f2;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  border-radius: 1em;
+}
+body header .nav-link.active:hover {
+  transform: none;
+}
+body header .nav-link.active::after {
+  opacity: 1;
+  background-color: gold;
+}
+body header .nav-link-modif:hover::after {
+  opacity: 1;
+  background-color: #f2f2f2;
 }
 
 body .main-index {
   min-height: 100vh;
-  background-image: url(../img/bg-index.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
   overflow: hidden;
 }
 body .main-index .container-index__section {
-  padding: 6.5em;
+  display: flex;
+  margin-top: 10%;
+}
+body .main-index .container-index__section .picture {
+  display: flex;
+  align-items: center;
+}
+body .main-index .container-index__section .picture .picture-logo {
   margin-left: 5em;
+  width: 325px;
+  display: inline-block;
 }
 body .main-index .container-index__section .index-section__h1 {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding: 0.3em;
-  margin-left: 12em;
+  width: 42%;
+  margin-left: 5em;
   border-left: 1px solid #f2f2f2;
   color: #f2f2f2;
   font-size: 2.4rem;
@@ -106,17 +135,23 @@ body .main-index .container-index__section .index-section__h1 .nombre-index {
   font-size: 2.8rem;
   text-align: center;
 }
-body .main-index .container-index__section .index-section__p {
-  padding: 1em;
-  margin-left: 22em;
+body .main-index .container-index__section .row .container .row-index__p .index-section__p1, body .main-index .container-index__section .row .container .row-index__p .index-section__p2 {
+  padding-top: 1em;
+  margin-left: 8em;
   color: #f2f2f2;
-  width: 70%;
+  width: 50%;
   text-align: center;
   font-weight: bold;
 }
+body .main-index .container-index__section .row .container .row-index__p .index-section__p2 {
+  padding-left: 20em;
+}
 body .main-index .container-index__section .icon-ul {
-  margin: 2em 0 0 27em;
+  margin: 2em 0 0 13em;
   gap: 3em;
+}
+body .main-index .container-index__section .icon-ul .resize-svg {
+  color: goldenrod;
 }
 body .main-pages {
   background: linear-gradient(0deg, rgb(116, 121, 126) 0%, rgba(0, 0, 0, 0.9199539313) 25%);
@@ -162,7 +197,7 @@ body .main-pages .section-page .card-body-modif--GCard {
   color: #01030d;
 }
 body .main-pages .section-page .card-title-cursos {
-  color: #138af2;
+  color: rgb(181, 156, 16);
 }
 body .main-pages .section-page .card-text-cursos {
   font-family: sans-serif;
@@ -175,12 +210,12 @@ body .main-pages .section-page .sub-titles__p {
 body .main-pages .section-page .card-portfolio {
   border: #01030d solid 1px;
   padding: 3%;
-  background-color: #24303c;
+  background-color: none;
 }
 body .main-pages .section-page .card-portfolio-body {
   margin-top: 2%;
   color: #01030d;
-  background-color: #116ebf;
+  background-color: gold;
   border-radius: 0 0 1rem 1rem;
 }
 body .main-pages .section-page .card-text-small {
@@ -205,6 +240,10 @@ body .main-pages .section-page form .form-check {
   margin-left: 0.1em;
 }
 body .main-pages .section-page .btn-form {
+  border-color: #01030d;
+  font-weight: 200;
+  color: #fff;
+  background-color: gold;
   margin: 2em;
 }
 @media only screen and (max-width: 1200px) {
@@ -265,9 +304,12 @@ body .main-pages .section-page .btn-form {
   body header nav {
     background-color: #222126;
   }
-  body header .nav-link-modif:hover {
-    color: #116ebf;
+  body header nav .nav-link.active:hover {
+    color: gold;
     transform: none;
+  }
+  body header nav .nav-link.active::after {
+    content: none;
   }
   body .main-index {
     background-image: url(../img/bg-index-mobile.jpg);

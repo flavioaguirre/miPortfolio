@@ -1,16 +1,19 @@
-body {
-    background-color: #000;
-    color: $text-color;
-    ul {
-        list-style-type: none;
-    }
-    img {
-        max-width: 100%;
-        width: 100%;
-        display: block;
-    }
-    a {
-        text-decoration: none;
-        font-style: inherit;
+html {
+    scroll-behavior: smooth;
+    body {
+        background-color: #000;
+        color: $text-color;
+        ul {
+            list-style-type: none;
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+        a {
+            text-decoration: none;
+            font-style: inherit;
+            color: goldenrod;
+        }
     }
 }
