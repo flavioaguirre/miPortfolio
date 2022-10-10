@@ -1,6 +1,12 @@
-body .main-pages .section-page .btn-form:hover, body .main-pages .section-page .portfolio-git__a:hover, body .main-pages .section-page .card-portfolio:hover, body .main-pages .section-page .card-footer .btn-cursos:hover, body .main-pages .section-page .cloud-arrow-down-modif:hover, body .main-index .container-index__section .icon-ul .resize-svg:hover, body header .nav-link:hover, body footer ul .resize-svg:hover {
+body .main-pages .section-page .btn-form:hover, body .main-pages .section-page .portfolio-git__a:hover, body .main-pages .section-page .card-footer .btn-cursos:hover, body .main-pages .section-page .cloud-arrow-down-modif:hover, body .main-index .container-index__section .icon-ul .resize-svg:hover, body header .nav-link-modif:hover, body footer ul .resize-svg:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+body .main-pages .section-page .card-portfolio:hover {
   transform: scale(1.1);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 
@@ -45,6 +51,9 @@ body footer ul {
 body footer ul .resize-svg {
   height: 1.7rem;
 }
+body footer ul .resize-svg:hover {
+  color: gold;
+}
 body footer .footerConteinerUl__li-index {
   display: none;
 }
@@ -74,34 +83,38 @@ body header .btn-outline-success {
   color: gold;
   border-color: gold;
 }
-body header .nav-link {
+body header .nav-link-modif {
   position: relative;
+  background-image: linear-gradient(90deg, #f2f2f2, #f2f2f2);
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  background-position: center bottom;
+  transition: background-size 0.5s ease-in-out;
 }
-body header .nav-link:hover {
-  color: #f2f2f2;
+body header .nav-link-modif:hover {
+  background-size: 100% 2px;
 }
 body header .nav-link::after {
   content: "";
-  background-color: #f2f2f2;
+  background-image: gold;
   position: absolute;
   left: 0;
   top: 100%;
   width: 100%;
   height: 4px;
   opacity: 0;
-  transition: opacity 0.5s;
   border-radius: 1em;
+}
+body header .nav-link.active {
+  position: relative;
 }
 body header .nav-link.active:hover {
   transform: none;
+  background-color: none;
 }
 body header .nav-link.active::after {
   opacity: 1;
   background-color: gold;
-}
-body header .nav-link-modif:hover::after {
-  opacity: 1;
-  background-color: #f2f2f2;
 }
 
 body .main-index {
@@ -118,7 +131,7 @@ body .main-index .container-index__section .picture {
 }
 body .main-index .container-index__section .picture .picture-logo {
   margin-left: 5em;
-  width: 325px;
+  width: 18rem;
   display: inline-block;
 }
 body .main-index .container-index__section .index-section__h1 {
@@ -126,7 +139,7 @@ body .main-index .container-index__section .index-section__h1 {
   flex-direction: column;
   width: 42%;
   margin-left: 5em;
-  border-left: 1px solid #f2f2f2;
+  border-left: 2px solid #f2f2f2;
   color: #f2f2f2;
   font-size: 2.4rem;
   text-align: center;
@@ -147,10 +160,11 @@ body .main-index .container-index__section .row .container .row-index__p .index-
   padding-left: 20em;
 }
 body .main-index .container-index__section .icon-ul {
-  margin: 2em 0 0 13em;
+  margin: 3em 0 0 11em;
   gap: 3em;
 }
 body .main-index .container-index__section .icon-ul .resize-svg {
+  margin-top: 3em;
   color: goldenrod;
 }
 body .main-pages {
@@ -178,6 +192,7 @@ body .main-pages .section-page .person-circle-modif {
 }
 body .main-pages .section-page .cloud-arrow-down-modif {
   height: 3em;
+  color: gold;
 }
 body .main-pages .section-page .section-sobre-mi__div {
   margin-top: 3em;

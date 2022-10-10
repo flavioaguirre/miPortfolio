@@ -28,6 +28,7 @@ body {
             }
             .cloud-arrow-down-modif {
                 height: $spacing-small;
+                color: gold;
                 &:hover {
                     @extend %hover-animations;
                 }
@@ -71,7 +72,7 @@ body {
                 padding: 3%;
                 background-color: none;
                     &:hover {
-                        @extend %hover-animations;
+                        @extend %hover-animations2;
                     }
             }
             .card-portfolio-body {

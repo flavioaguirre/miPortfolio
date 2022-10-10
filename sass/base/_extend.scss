@@ -1,5 +1,11 @@
 %hover-animations {
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+%hover-animations2 {
     transform: scale(1.1);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
 }

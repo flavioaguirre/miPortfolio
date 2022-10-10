@@ -25,38 +25,41 @@ body {
             color: map-get($header, bg-buton);
             border-color: map-get($header, bg-buton);
         }
-        .nav-link {
+        .nav-link-modif {
             position: relative;
+            background-image: linear-gradient(90deg, $text-color, $text-color);
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            background-position: center bottom;
+            transition: background-size .5s ease-in-out;
             &:hover {
-                color: map-get($header, text-color);
+                color: map-get($header, $text-color);
+                background-size: 100% 2px;
                 @extend %hover-animations;
             }
+        }
+        .nav-link {
             &::after {
                 content: "";
-                background-color: $text-color;
+                background-image: gold;
                 position: absolute;
                 left: 0;
                 top: 100%;
                 width: 100%;
                 height: 4px;
                 opacity: 0;
-                transition: opacity .5s;
                 border-radius: 1em;
             }
         }
         .nav-link.active {
+            position: relative;
             &:hover {
                 transform: none;
+                background-color: none;
             }
             &::after {
                 opacity: 1;
                 background-color: gold;
-            }
-        }
-        .nav-link-modif {
-            &:hover::after {
-                opacity: 1;
-                background-color: $text-color;
             }
         }
     }

@@ -10,7 +10,7 @@ body {
                 align-items: center;
                 .picture-logo {
                     margin-left: $spacing-medium;
-                    width: 325px;
+                    width: 18rem;
                     display: inline-block;
                 }
             }
@@ -18,8 +18,8 @@ body {
                 display: flex;
                 flex-direction: column;
                 width: 42%;
-                margin-left: $spacing-medium;
-                border-left: 1px solid $text-color;
+                margin-left: 5em;
+                border-left: 2px solid $text-color;
                 color: $text-color;
                 @include text (2.4rem, center);
                 .nombre-index {
@@ -44,9 +44,10 @@ body {
                 }
             }
             .icon-ul {
-                margin:$spacing-xsmall 0 0 13em;
+                margin:$spacing-small 0 0 11em;
                 gap: $spacing-small;
                 .resize-svg {
+                    margin-top: 3em;
                     color: goldenrod;
                     &:hover {
                         @extend %hover-animations;

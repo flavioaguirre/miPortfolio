@@ -18,6 +18,7 @@ body {
             .resize-svg {
                 height: map-get($footer, height-icon);
                     &:hover {
+                        color: gold;
                         @extend %hover-animations;
                     }
             }
