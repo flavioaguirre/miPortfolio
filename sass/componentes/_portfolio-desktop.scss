@@ -1,0 +1,36 @@
+body {
+    .container-all {
+        .container-carrousel {
+            .carrousel-destokp {
+                
+                .car-desk__figure {
+                    position: absolute;
+                    .car-fig__img {
+                        width: 20rem;
+                        position: absolute;
+                        &:nth-child(1) {
+                            position: absolute;
+                            transform: rotateY(0deg) translateZ(300deg);
+                        }
+                        &:nth-child(2) {
+                            position: absolute;
+                            transform: rotateY(72deg) translateZ(300deg);
+                        }
+                        &:nth-child(3) {
+                            transform: rotateY(144deg) translateZ(300deg);
+                        }
+                        &:nth-child(4) {
+                            transform: rotateY(216deg) translateZ(300deg);
+                        }
+                        &:nth-child(5) {
+                            transform: rotateY(288deg) translateZ(300deg);
+                        }
+                        &:nth-child(6) {
+                            transform: rotateY(360deg) translateZ(300deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

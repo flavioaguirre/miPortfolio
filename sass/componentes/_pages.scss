@@ -67,34 +67,35 @@ body {
             }
 
             // Portfolio
-            .card-portfolio {
-                border: $color-dark solid 1px;
-                padding: 3%;
-                background-color: none;
-                    &:hover {
-                        @extend %hover-animations2;
-                    }
-            }
-            .card-portfolio-body {
-                margin-top: 2%;
-                color: $color-dark;
-                background-color: gold;
-                border-radius: 0 0 1rem 1rem;
-            }
-            .card-text-small {
-                color: $text-color-alter
-            }
             .row-portfolio {
-                gap: $spacing-medium;
-            }
-            .portfolio-git__p {
-                @include text(1.5rem, center);
-                gap: 1%;
-            }
-            .portfolio-git__a {
-                color: $text-color;
-                &:hover {
-                    @extend %hover-animations;
+                row-gap: 0;
+                .card-portfolio {
+                    width: 30%;
+                    border: $color-dark solid 1px;
+                    padding: 0;
+                    background-color: none;
+                        &:hover {
+                            @extend %hover-animations2;
+                        }
+                }
+                .card-portfolio-body {
+                    margin-top: 2%;
+                    color: $color-dark;
+                    background-color: gold;
+                    border-radius: 0 0 1rem 1rem;
+                }
+                .card-text-small {
+                    color: $text-color-alter
+                }
+                .portfolio-git__p {
+                    @include text(1.5rem, center);
+                    gap: 1%;
+                }
+                .portfolio-git__a {
+                    color: $text-color;
+                    &:hover {
+                        @extend %hover-animations;
+                    }
                 }
             }
 

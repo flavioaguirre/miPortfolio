@@ -50,7 +50,7 @@ body {
                     margin-top: 3em;
                     color: goldenrod;
                     &:hover {
-                        @extend %hover-animations;
+                        @extend %hover-animations3;
                     }
                 }
             }
