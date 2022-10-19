@@ -187,13 +187,41 @@ body .main-pages .section-page .section-competencias__p {
 body .main-pages .section-page .sub-titles__h2 {
   padding-top: 2em;
 }
-body .main-pages .section-page .container-skill .html {
-  background-color: orange;
-  color: orange;
+body .main-pages .section-page .container-skill .accordion-flush-modif {
+  background-color: #000;
 }
-body .main-pages .section-page .container-skill .html .img {
-  height: 2px;
-  width: 5px;
+body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item {
+  background-color: transparent;
+}
+body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-header .accordion-button::after {
+  margin-left: none;
+}
+body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-button-modif {
+  background-color: transparent;
+  justify-content: center;
+}
+body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-button-modif:focus {
+  box-shadow: none;
+}
+body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-button-modif body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-button-modif {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-button-modif .accordion-flush .accordion-item .accordion-button, body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-button-modif .accordion-flush .accordion-item .accordion-button.collapsed {
+  border-radius: 0;
+}
+body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-button-modif .accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+}
+body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-button-modif img {
+  background-color: gold;
+  display: inline-block;
+}
+body .main-pages .section-page .container-skill .html {
+  height: 30px;
+  width: 10vh;
 }
 body .main-pages .section-page .card-title-cursos {
   color: rgb(181, 156, 16);

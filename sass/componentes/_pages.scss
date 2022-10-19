@@ -57,13 +57,51 @@ body {
                 padding-top: $spacing-xsmall;
             }
             .container-skill {
-                .html {
-                    .img {
-                        height: 2px;
-                        width: 5px;
+                .accordion-flush-modif {
+                    background-color: #000;
+                    .accordion-item {
+                        background-color: transparent;
+                        .accordion-header {
+                            .accordion-button {
+                                &::after{
+                                    margin-left: none;
+                                }
+                            }
+                        }
+                        .accordion-button-modif {
+                            background-color: transparent;
+                            justify-content: center;
+                            &:focus {
+                                box-shadow: none;
+                            }
+                            element.style {
+                            }
+                            body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-button-modif {
+                                background-color: transparent;
+                                display: flex;
+                                justify-content: center;
+                            }
+                            .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+                                border-radius: 0;
+                            }
+                            .accordion-item:first-of-type .accordion-button {
+                                border-top-left-radius: 5rem;
+                                border-top-right-radius: 5rem;
+                            }
+                            img {
+                                background-color: gold;
+                                display: inline-block;
+                            }
+                        }
                     }
-                    background-color:  orange;
-                    color: orange;
+                }
+                .html {
+                    // display: flex;
+                    // justify-content: center;
+                    // background-color:  orange;
+                    // color: orange;
+                    height: 30px;
+                    width: 10vh;
                 }
             }
             .card-title-cursos {
