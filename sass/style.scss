@@ -1,11 +1,13 @@
+// Bases
 @import "./base/variables.scss";
 @import "./base/mixin.scss";
 @import "./base/extend.scss";
 @import "./base/maps.scss";
+
+// Componentes
 @import "./componentes/global.scss";
-@import "./componentes/footer.scss";
 @import "./componentes/header.scss";
 @import "./componentes/index.scss";
-@import "./componentes/portfolio-desktop.scss";
 @import "./componentes/pages.scss";
+@import "./componentes/footer.scss";
 @import "./componentes/media-queries.scss";

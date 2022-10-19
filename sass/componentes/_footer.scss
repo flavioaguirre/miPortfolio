@@ -1,5 +1,17 @@
 body {
+    .footer-index {
+        border-top: none;
+        .title-footer {
+            font-family: monospace;
+            color: gold;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+body {
     footer {
+        border-top: .2px solid gold;
         position: relative;
         bottom: 0;
         height: 12vh;
@@ -7,12 +19,6 @@ body {
         padding: map-get($footer, spacing-1) 0 .8em 0;
         overflow: hidden;
         background-color: none;
-        .title-footer {
-            font-family: monospace;
-            color: gold;
-            display: flex;
-            justify-content: center;
-        }
         ul {
             gap: map-get($footer, spacing-2);
             .resize-svg {

@@ -19,7 +19,7 @@ body {
                 flex-direction: column;
                 width: 42%;
                 margin-left: 5em;
-                border-left: 2px solid $text-color;
+                // border-left: 2px solid $text-color;
                 color: $text-color;
                 @include text (2.4rem, center);
                 .nombre-index {
@@ -31,20 +31,21 @@ body {
                     .row-index__p {
                         .index-section__p1, .index-section__p2 {
                             padding-top:  1em;
-                            margin-left: $spacing-large;
+                            margin-left: $spacing-xxlarge;
                             color: $text-color;
-                            width: 50%;
+                            width: 40%;
                             text-align: center;
                             font-weight: bold;
+                            
                         }
                         .index-section__p2 {
-                            padding-left: 20em;
+                            padding-left: 4.5em;
                         }
                     }
                 }
             }
             .icon-ul {
-                margin:$spacing-small 0 0 11em;
+                margin:$spacing-small 0 0 12em;
                 gap: $spacing-small;
                 .resize-svg {
                     margin-top: 3em;

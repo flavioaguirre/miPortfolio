@@ -1,10 +1,10 @@
 body {
     .main-pages {
-        background: linear-gradient(
-        0deg,
-        rgb(116, 121, 126) 0%,
-        rgba(0, 0, 0, 0.9199539313) 25%
-        );
+        // background: linear-gradient(
+        // 0deg,
+        // rgb(116, 121, 126) 0%,
+        // rgba(0, 0, 0, 0.9199539313) 25%
+        // );
         font-family: $font-principal;
         padding: $spacing-small;
 
@@ -26,59 +26,102 @@ body {
                 background-color: $bg-footer;
                 border-radius: 5rem;
             }
-            .cloud-arrow-down-modif {
-                height: $spacing-small;
-                color: gold;
-                &:hover {
-                    @extend %hover-animations;
-                }
-            }
-            .section-sobre-mi__div {
+            .section-sobre-mi__div-parrafo {
                 margin-top: $spacing-small;
                 padding: $spacing-xxsmall;
                 @include text(1.6rem, center);
+                .certificado-d-w {
+                    &:hover {
+                        color: goldenrod;
+                        text-shadow: 0 .125rem .325rem rgba(255, 217, 0, 0.559);
+                    }
+                }
+            }
+            .bg-svg-arrow {
+                .arrow-top {
+                    border-radius: 70%;
+                    background-size: 100%;
+                    &:hover {
+                        @extend %hover-animations3;
+                        color: goldenrod;
+                    }
+                }
             }
 
-            // Cursos
-            .containerTitles__p {
+            // Competencias
+            .section-competencias__p {
                 @include text(1.6rem, center);
                 padding-bottom: $spacing-xsmall;
             }           
             .sub-titles__h2 {
                 padding-top: $spacing-xsmall;
             }
-            .card-body-modif--GCard {
-                color:  $color-dark;
+            .container-skill {
+                .html {
+                    .img {
+                        height: 2px;
+                        width: 5px;
+                    }
+                    background-color:  orange;
+                    color: orange;
+                }
             }
             .card-title-cursos {
                 color: $bg-botom2;
             }
-            .card-text-cursos {
-                font-family: $font-principal;
-                line-height: normal;
-            }
-            .card-footer {
-                .btn-cursos:hover {
-                    @extend %hover-animations;
-                }
-            }
-            .sub-titles__p {
-                @include text (1.2rem, center);
-            }
 
-            // Portfolio
-            .row-portfolio {
-                row-gap: 0;
-                .card-portfolio {
-                    width: 30%;
-                    border: $color-dark solid 1px;
-                    padding: 0;
-                    background-color: none;
-                        &:hover {
-                            @extend %hover-animations2;
+
+
+            // Proyectos
+            .container-proyectos {
+                padding: 1rem;
+                gap: 5rem;
+                .card-proyectos {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 18.75rem;
+                    height: 21.875rem;
+                    position: relative;
+                    &:hover {
+                        .front {
+                            transform: perspective(37.5rem) rotateY(180deg);
                         }
+                        .back {
+                            transform: perspective(37.5rem) rotateY(360deg);
+                        }
+                    }
+                    .face {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        backface-visibility: hidden;
+                        border-radius: .625rem;
+                        overflow: hidden;
+                        transition: .5s;
+                    }
+                    .front {
+                        transform: perspective(37.5rem) rotateY(0deg);
+                        box-shadow: 0 .3125rem .625rem #f8f8f8;
+                        .card-img {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .back {
+                        transform: perspective(37.5rem) rotateY(180deg);
+                        background-color: #020202;
+                        padding: .9375rem;
+                        color: #f3f3f3;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        text-align: center;
+                        box-shadow: 0 .3125rem .625rem gold;
+                    }
                 }
-                .card-portfolio-body {
+                .card-proyectos-body {
                     margin-top: 2%;
                     color: $color-dark;
                     background-color: gold;
@@ -87,11 +130,12 @@ body {
                 .card-text-small {
                     color: $text-color-alter
                 }
-                .portfolio-git__p {
+                .proyectos-git__p {
                     @include text(1.5rem, center);
                     gap: 1%;
+                    padding-top: 8%;
                 }
-                .portfolio-git__a {
+                .proyectos-git__a {
                     color: $text-color;
                     &:hover {
                         @extend %hover-animations;
@@ -102,6 +146,11 @@ body {
             // Contacto
             form {
                 color: rgb(128, 128, 128);
+                // .form-floating>.form-control, .form-floating>.form-control-plaintext {
+                //     &:target{
+                //         border-style: #000;
+                //     }
+                // }
                 .form-check {
                     padding-top: $spacing-xsmall;
                     margin-left: .1em;
@@ -110,11 +159,11 @@ body {
             .btn-form {
                 border-color: $color-dark;
                 font-weight: 200;
-                color: #fff;
+                color: #000;
                 background-color: gold;
                 margin: $spacing-xsmall;
                 &:hover {
-                    @extend %hover-animations;
+                    box-shadow: 0 .3125rem .625rem gold;
                 }
             }
         }

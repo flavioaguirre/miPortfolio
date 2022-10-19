@@ -27,16 +27,14 @@ body {
         }
         .nav-link-modif {
             position: relative;
-            background-image: linear-gradient(90deg, $text-color, $text-color);
+            background-image: linear-gradient(70deg, $text-color, gold);
             background-repeat: no-repeat;
-            background-size: 0% 2px;
+            background-size: 0% .125rem;
             background-position: center bottom;
-            transition: background-size .5s ease-in-out;
+            transition: background-size .3s ease-in-out;
             &:hover {
-                color: map-get($header, $text-color);
-                background-size: 100% 2px;
-                @extend %hover-animations;
-                padding-bottom: .3em;
+                color: linear-gradient(10deg, $text-color, gold);
+                background-size: 100% .125rem;
             }
         }
         .nav-link {
@@ -45,9 +43,9 @@ body {
                 background-image: gold;
                 position: absolute;
                 left: 0;
-                top: 88%;
+                top: 95%;
                 width: 100%;
-                height: .1875rem;
+                height: .125rem;
                 opacity: 0;
                 border-radius: 1em;
             }
@@ -57,6 +55,7 @@ body {
             &:hover {
                 transform: none;
                 background-color: none;
+                cursor: default;
             }
             &::after {
                 opacity: 1;
