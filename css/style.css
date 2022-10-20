@@ -107,6 +107,7 @@ body .main-index .container-index__section .picture .picture-logo {
   margin-left: 5em;
   width: 18rem;
   display: inline-block;
+  border-radius: 50%;
 }
 body .main-index .container-index__section .index-section__h1 {
   display: flex;
@@ -141,13 +142,14 @@ body .main-index .container-index__section .icon-ul .resize-svg {
   color: goldenrod;
 }
 body .main-pages {
-  font-family: sans-serif;
   padding: 3em;
 }
 body .main-pages .section-page {
+  font-family: sans-serif;
   margin-top: 3em;
 }
 body .main-pages .section-page .main-titles__h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
   margin: 1em;
   font-size: 3rem;
   text-align: center;
@@ -157,10 +159,10 @@ body .main-pages .section-page .main-titles__h1 {
 body .main-pages .section-page .person-circle-modif {
   margin-top: 2em;
   padding: 1em;
-  max-width: 100vh;
+  max-width: 22rem;
   justify-content: center;
   background-color: #222126;
-  border-radius: 5rem;
+  border-radius: 50%;
 }
 body .main-pages .section-page .section-sobre-mi__div-parrafo {
   margin-top: 3em;
@@ -227,6 +229,7 @@ body .main-pages .section-page .card-title-cursos {
   color: rgb(181, 156, 16);
 }
 body .main-pages .section-page .container-proyectos {
+  margin: auto 0;
   padding: 1rem;
   gap: 5rem;
 }
@@ -236,6 +239,7 @@ body .main-pages .section-page .container-proyectos .card-proyectos {
   width: 18.75rem;
   height: 21.875rem;
   position: relative;
+  margin: 25% 0 30% 0;
 }
 body .main-pages .section-page .container-proyectos .card-proyectos:hover .front {
   transform: perspective(37.5rem) rotateY(180deg);
@@ -254,7 +258,7 @@ body .main-pages .section-page .container-proyectos .card-proyectos .face {
 }
 body .main-pages .section-page .container-proyectos .card-proyectos .front {
   transform: perspective(37.5rem) rotateY(0deg);
-  box-shadow: 0 0.3125rem 0.625rem #f8f8f8;
+  border: 0.125rem solid gold;
 }
 body .main-pages .section-page .container-proyectos .card-proyectos .front .card-img {
   position: absolute;
