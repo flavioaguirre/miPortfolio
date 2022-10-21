@@ -113,7 +113,7 @@ body .main-index .container-index__section .index-section__h1 {
   display: flex;
   flex-direction: column;
   width: 42%;
-  margin-left: 5em;
+  margin-left: 4.5em;
   color: #f2f2f2;
   font-size: 2.4rem;
   text-align: center;
@@ -124,7 +124,7 @@ body .main-index .container-index__section .index-section__h1 .nombre-index {
 }
 body .main-index .container-index__section .row .container .row-index__p .index-section__p1, body .main-index .container-index__section .row .container .row-index__p .index-section__p2 {
   padding-top: 1em;
-  margin-left: 13em;
+  margin-left: 11.5em;
   color: #f2f2f2;
   width: 40%;
   text-align: center;
@@ -186,47 +186,91 @@ body .main-pages .section-page .section-competencias__p {
   text-align: center;
   padding-bottom: 2em;
 }
-body .main-pages .section-page .sub-titles__h2 {
-  padding-top: 2em;
-}
-body .main-pages .section-page .container-skill .accordion-flush-modif {
-  background-color: #000;
-}
-body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item {
-  background-color: transparent;
-}
-body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-header .accordion-button::after {
-  margin-left: none;
-}
-body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-button-modif {
-  background-color: transparent;
-  justify-content: center;
-}
-body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-button-modif:focus {
-  box-shadow: none;
-}
-body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-button-modif body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-button-modif {
-  background-color: transparent;
+body .main-pages .section-page .container-skills {
+  margin-left: 1%;
+  padding: 5% 0 10% 0;
   display: flex;
   justify-content: center;
+  gap: 1.5rem;
 }
-body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-button-modif .accordion-flush .accordion-item .accordion-button, body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-button-modif .accordion-flush .accordion-item .accordion-button.collapsed {
-  border-radius: 0;
+body .main-pages .section-page .container-skills .skill {
+  background-color: none;
+  width: 6.25rem;
+  height: 6.25rem;
+  position: relative;
+  border-radius: 20%;
+  animation: salto 0.8s infinite;
 }
-body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-button-modif .accordion-item:first-of-type .accordion-button {
-  border-top-left-radius: 5rem;
-  border-top-right-radius: 5rem;
-}
-body .main-pages .section-page .container-skill .accordion-flush-modif .accordion-item .accordion-button-modif img {
-  background-color: gold;
+body .main-pages .section-page .container-skills .skill::after {
+  content: "";
   display: inline-block;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/250px-HTML5_logo_and_wordmark.svg.png");
+  width: 6.25rem;
+  height: 6.25rem;
+  position: absolute;
+  background-size: 5.625rem 5.625rem;
+  background-repeat: no-repeat;
+  top: 0.125rem;
 }
-body .main-pages .section-page .container-skill .html {
-  height: 30px;
-  width: 10vh;
+@keyframes salto {
+  0%, 100% {
+    top: 0;
+  }
+  30% {
+    top: -1.5625rem;
+  }
 }
-body .main-pages .section-page .card-title-cursos {
-  color: rgb(181, 156, 16);
+@keyframes salto2 {
+  0%, 100% {
+    top: 0;
+  }
+  35% {
+    top: -1.5625rem;
+  }
+}
+body .main-pages .section-page .container-skills .css {
+  animation: salto2 0.7s infinite;
+}
+body .main-pages .section-page .container-skills .css::after {
+  content: "";
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/250px-CSS3_logo.svg.png");
+  background-size: 4.625rem 4.625rem;
+  top: 1.225rem;
+  background-repeat: no-repeat;
+}
+body .main-pages .section-page .container-skills .bootstrap::after {
+  content: "";
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/250px-Bootstrap_logo.svg.png");
+  background-size: 4.625rem 4.625rem;
+  top: 1.225rem;
+  background-repeat: no-repeat;
+}
+body .main-pages .section-page .container-skills .sass {
+  animation: salto2 0.7s infinite;
+}
+body .main-pages .section-page .container-skills .sass::after {
+  content: "";
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/245px-Sass_Logo_Color.svg.png");
+  background-size: 4.625rem 4.625rem;
+  top: 1.225rem;
+  background-repeat: no-repeat;
+}
+body .main-pages .section-page .container-skills .git::after {
+  content: "";
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/200px-Git-logo.svg.png");
+  background-size: 5rem 5rem;
+  top: 1.225rem;
+  background-repeat: no-repeat;
+}
+body .main-pages .section-page .container-skills .node {
+  animation: salto2 0.7s infinite;
+}
+body .main-pages .section-page .container-skills .node::after {
+  content: "";
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/200px-Node.js_logo.svg.png");
+  background-size: 5rem 5rem;
+  top: 1.225rem;
+  background-repeat: no-repeat;
 }
 body .main-pages .section-page .container-proyectos {
   margin: auto 0;
@@ -254,7 +298,7 @@ body .main-pages .section-page .container-proyectos .card-proyectos .face {
   backface-visibility: hidden;
   border-radius: 0.625rem;
   overflow: hidden;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 body .main-pages .section-page .container-proyectos .card-proyectos .front {
   transform: perspective(37.5rem) rotateY(0deg);
@@ -304,7 +348,7 @@ body .main-pages .section-page form .form-check {
 }
 body .main-pages .section-page .btn-form {
   border-color: #01030d;
-  font-weight: 200;
+  font-weight: bold;
   color: #000;
   background-color: gold;
   margin: 2em;
@@ -346,55 +390,40 @@ body footer .footerConteinerUl__li-index {
   display: none;
 }
 
-@media only screen and (max-width: 1200px) {
-  body .main-index {
-    max-width: 100%;
-  }
-  body .main-index .container-index__section {
-    min-height: 100vh;
-  }
-  body .main-index .container-index__section .index-section__h1 {
-    margin-left: 14em;
-    max-width: 70%;
-    font-size: 2rem;
-    text-align: center;
-  }
-  body .main-index .container-index__section .index-section__h1 .nombre-index {
-    font-size: 2.3rem;
-    text-align: center;
-  }
-  body .main-index .container-index__section .index-section__p {
-    max-width: 70%;
-    margin-left: 23em;
-  }
-  body .main-index .container-index__section .icon-ul {
-    margin: 2em 0 0 24em;
-  }
-}
 @media only screen and (max-width: 992px) {
   body header nav {
     background-color: #000;
   }
   body header .container-nav {
-    margin: 0 2em 0 3em;
+    margin: 0;
+    padding: 0 2%;
   }
-  body .main-index .container-index__section {
+  body header .container-nav .navbar-nav-modif {
+    gap: 1.1875rem;
+  }
+  body .main-index .container-index__section .picture {
     width: 100%;
-    padding: 1rem 2rem 0 1rem;
-    margin: 5em 0 0 3em;
+    margin: 20% 15% 0 0;
+  }
+  body .main-index .container-index__section .picture .picture-logo {
+    width: 12rem;
+    margin-left: 0;
   }
   body .main-index .container-index__section .index-section__h1 {
-    margin-left: 12.5em;
-    font-size: 2rem;
+    margin: 3em 0 0 6rem;
+    font-size: 1.7rem;
   }
   body .main-index .container-index__section .index-section__h1 .nombre-index {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
   }
   body .main-index .container-index__section .index-section__p {
-    margin-left: 20em;
+    width: 80%;
+  }
+  body .main-index .container-index__section .index-section__p .index-section__p1, body .main-index .container-index__section .index-section__p .index-section__p2 {
+    width: 90%;
   }
   body .main-index .container-index__section .icon-ul {
-    margin: 2em 0 0 18em;
+    margin: 2em 0 0 7em;
   }
   body footer {
     padding-bottom: 6%;
