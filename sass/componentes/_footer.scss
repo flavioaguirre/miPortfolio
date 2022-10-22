@@ -1,6 +1,7 @@
 body {
     .footer-index {
         border-top: none;
+        height: 10vh;
         .title-footer {
             font-family: monospace;
             color: gold;
@@ -14,7 +15,7 @@ body {
         border-top: .2px solid gold;
         position: relative;
         bottom: 0;
-        height: 12vh;
+        height: 10vh;
         max-width: 100%;
         padding: map-get($footer, spacing-1) 0 .8em 0;
         overflow: hidden;

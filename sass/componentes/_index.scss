@@ -1,16 +1,18 @@
 body {
     .main-index {
-        min-height: 100vh;
+        min-height: 90vh;
         overflow: hidden;
         .container-index__section {
+            gap: 0;
             display: flex;
-            margin-top: 10%;
+            margin: 12% 0 0 4%;
+            padding-right: 3%;
             .picture {
                 display: flex;
                 align-items: center;
                 .picture-logo {
-                    margin-left: $spacing-medium;
-                    width: 18rem;
+                    margin: 0 0 0 $spacing-xlarge;
+                    width: 15rem;
                     display: inline-block;
                     border-radius: 50%;
                 }
@@ -18,9 +20,8 @@ body {
             .index-section__h1 {
                 display: flex;
                 flex-direction: column;
-                width: 42%;
-                margin-left: 4.5em;
-                // border-left: 2px solid $text-color;
+                width: 52%;
+                margin: 0 8em 0 .9em;
                 color: $text-color;
                 @include text (2.4rem, center);
                 .nombre-index {
@@ -32,24 +33,24 @@ body {
                     .row-index__p {
                         .index-section__p1, .index-section__p2 {
                             padding-top:  1em;
-                            margin-left: 11.5em;
+                            margin-left: 3em;
                             color: $text-color;
-                            width: 40%;
+                            width: 50%;
                             text-align: center;
-                            font-weight: bold;
-                            
+                            font-weight: bold;                
                         }
                         .index-section__p2 {
-                            padding-left: 4.5em;
+                            padding-left: 3.5em;
                         }
                     }
                 }
             }
             .icon-ul {
-                margin:$spacing-small 0 0 12em;
+                margin:$spacing-xxsmall 1% 0 6.8rem;
                 gap: $spacing-small;
                 .resize-svg {
-                    margin-top: 3em;
+                    padding-right: 3%;
+                    margin-top: 1em;
                     color: goldenrod;
                     &:hover {
                         @extend %hover-animations3;
