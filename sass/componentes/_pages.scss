@@ -5,7 +5,7 @@ body {
             font-family: $font-principal;
             margin-top: $spacing-small;
             .main-titles__h1 {
-                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-family: $font-title-h1;
                 margin: $spacing-xxsmall;
                 @include text(3rem, center);
                 border-bottom: 2px solid $text-color;
@@ -27,7 +27,7 @@ body {
                 @include text(1.6rem, center);
                 .certificado-d-w {
                     &:hover {
-                        color: goldenrod;
+                        color: $active-color;
                         text-shadow: 0 .125rem .325rem rgba(255, 217, 0, 0.559);
                     }
                 }
@@ -38,7 +38,7 @@ body {
                     background-size: 100%;
                     &:hover {
                         @extend %hover-animations3;
-                        color: goldenrod;
+                        color: $active-color;
                     }
                 }
             }
@@ -188,15 +188,15 @@ body {
 
             // Contacto
             form {
-                color: #f2f2f2;
+                color: $text-color;
                 .form-control {
-                    color: gold;
+                    color: $active-color;
                     background-color: transparent;
                 }
                 .form-floating>.form-control-plaintext:focus, .form-floating>.form-control-plaintext:not(:placeholder-shown), .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
                     padding-top: 1.925rem;
                     padding-bottom: 0.925rem;
-                    box-shadow: 0 0.3125rem 0.625rem gold;
+                    box-shadow: 0 0.3125rem 0.625rem $active-color;
                 }
                 .form-check {
                     padding-top: $spacing-xsmall;
@@ -206,11 +206,11 @@ body {
             .btn-form {
                 border-color: $color-dark;
                 font-weight: bolder;
-                color: #000;
-                background-color: gold;
+                color: $color-dark;
+                background-color: $active-color;
                 margin: $spacing-xsmall;
                 &:hover {
-                    box-shadow: 0 .3125rem .625rem gold;
+                    box-shadow: 0 .3125rem .625rem $active-color;
                 }
             }
         }

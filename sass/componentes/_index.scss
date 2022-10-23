@@ -51,7 +51,7 @@ body {
                 .resize-svg {
                     padding-right: 3%;
                     margin-top: 1em;
-                    color: goldenrod;
+                    color: $active-color;
                     &:hover {
                         @extend %hover-animations3;
                     }

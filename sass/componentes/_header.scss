@@ -10,7 +10,7 @@ body {
             }
         }
         .code-slash-modif {
-            color: gold;
+            color: $active-color;
             margin-right: 0.5rem;
         }
         .navbar-nav-modif {
@@ -40,7 +40,7 @@ body {
         .nav-link {
             &::after {
                 content: "";
-                background-image: gold;
+                background-image: $active-color;
                 position: absolute;
                 left: 0;
                 top: 95%;
@@ -59,7 +59,7 @@ body {
             }
             &::after {
                 opacity: 1;
-                background-color: gold;
+                background-color: $active-color;
             }
         }
     }

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) { 
     body {
         header {
             nav {
@@ -55,19 +55,19 @@
     body {
         header {
             nav {
-                background-color: #000;
+                .navbar-collapse-menu {
+                    height: 100vh;
+                    margin-top: 6.3rem;
+                    font-size: 1.6rem;
+                }
+                background-color: $color-dark;
                 .navbar-nav .nav-link,
                 .navbar-nav .show > .nav-link {
                     display: flex;
                     justify-content: center;
                 }
                 .navbar-toggler {
-                    color: gold;
-                }
-                .navbar-collapse-menu {
-                    height: 100vh;
-                    margin-top: 15%;
-                    font-size: $text-base;
+                    color: $active-color;
                 }
                 .navbar-nav .nav-link.active,
                 .navbar-nav .show > .nav-link {
@@ -86,33 +86,30 @@
             }
         }
         .main-index {
-            background-image: url(../img/bg-index-mobile.jpg);
-            background-size: cover;
-            overflow-x: hidden;
-            font-size: $text-small;
-            .container-icon {
-                display: none;
-            }
+            font-size: $text-base;
             .container-index__section {
-                padding: $spacing-medium 0 $spacing-medium 0;
-                .index-section__h1 {
-                    max-width: 100%;
-                    font-size: $text-small;
-                    display: flex;
-                    flex-direction: column;
-                    margin: 0 0 0 5.2em;
-                    border: 0;
-                    border-bottom: 1px solid #f2f2f2;
-                    padding: 3%;
-                    .nombre-index {
-                        font-size: 2.3rem;
-                        max-width: 100%;
+                margin: 15% 14% 0 20%;
+                flex-direction: column;
+                row-gap: 1rem;
+                .picture {
+                    .picture-logo {
+                        margin: .5em 0 0 4.6em;
+                        width: 10rem;
                     }
                 }
-                .index-section__p {
-                    margin: 0 0 0 4em;
-                    font-size: 1rem;
-                    max-width: 100%;
+                .index-section__h1 {
+                    margin: 1.5rem 0 0 4.5rem;
+                }
+                .container {
+                    .index-section__p1 {
+                        display: none;
+                    }
+                }
+                .container-icon {
+                    .icon-ul {
+                        gap: 2em;
+                        margin: 1em 0 2em 0;
+                    }
                 }
             }
         }
@@ -127,26 +124,18 @@
                 }
                 // Proyectos
             .container-proyectos {
-                margin-left: 6.5rem;
-                .card-proyectos {
-                }
+                margin-left: 5.9rem;
             }
 
             }
         }
-        footer {
+        .footer-index {
             .title-footer {
-                display: none;
+                font-size: .9rem;
             }
             ul {
                 gap: $spacing-xsmall;
                 margin-right: $spacing-xsmall;
-                .footerConteinerUl__li-index {
-                    display: initial;
-                    .resize-svg {
-                        width: $text-xsmall;
-                    }
-                }
             }
         }
     }
@@ -155,58 +144,74 @@
     body {
         header {
             nav {
-                background-color: map-get($header, bg-header);
+                .navbar-collapse-menu {
+                    font-size: 1.8rem;
+                }
             }
             .container-nav {
-                margin: 0 $spacing-xxsmall 0 $spacing-xsmall;
+                margin: 0 2%;
             }
         }
         .main-index {
+            padding: 0 5%;
             .container-index__section {
-                margin: 0;
-                .index-section__h1 {
-                    margin-left: 4.2em;
+                margin: 20% 16% 0 0;
+                .picture {
+                    .picture-logo {
+                        margin: 3em 0 0 3.1em;
+                        width: 10rem;
+                    }
                 }
-                .index-section__p {
-                    margin-left: 2.5em;
-                    font-size: 1.3rem;
-                    padding: 1em .3em;
+                .index-section__h1 {
+                    width: 100%;
+                    font-size: $text-xsmall;
+                    margin: 1.5rem 0 0 .2rem;
+                }
+                .container-icon {
+                    .icon-ul {
+                        gap: 1.12em;
+                        margin: 1rem 0 1rem .5rem;
+                    }
                 }
             }
         }
-
         .main-pages {
             padding: 3%;
             .section-page {
+                // Título del resto de las páginas
                 .main-titles__h1 {
                     @include text(1.8rem, center);
                     width: 100%;
                     margin: $spacing-small 0 $spacing-xsmall 0;
                 }
-                // Cursos
-                .row-cards-group {
-                    display: flex;
-                    flex-direction: column;
-                }
-            }
-        }
-
-        footer {
-            .title-footer {
-                display: none;
-            }
-            ul {
-                gap: map-get($footer, spacing-2);
-                .resize-svg {
-                    height: map-get($footer, height-icon);
-                        &:hover {
-                            @extend %hover-animations;
+                // Competencias
+                .container-skills {
+                    flex-wrap: wrap;
+                    gap: 1.5rem;
+                    padding-bottom: 3em;
+                    .skill {
+                        margin-top: 1rem;
+                        width: 3.25rem;
+                        height: 3.25rem;
+                        &::after {
+                            padding: 2em;
+                            width: 3.25rem;
+                            height: 3.25rem;
+                            background-size: 3rem 3rem;
                         }
                     }
                 }
-                .footerConteinerUl__li-index {
-                    display: initial;
-                
+                // Proyectos 
+                .container-proyectos {
+                    margin: 0;
+                    column-gap: 5rem;
+                }
+            }
+        }
+        footer {
+            ul {
+                gap: $spacing-xsmall;
+                margin-right: $spacing-xxsmall;
             }
         }
     }

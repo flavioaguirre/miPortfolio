@@ -27,7 +27,7 @@ html body img {
 html body a {
   text-decoration: none;
   font-style: inherit;
-  color: goldenrod;
+  color: #E5B80B;
 }
 
 body header nav {
@@ -40,7 +40,7 @@ body header .container-nav .logo-fa {
   width: 10%;
 }
 body header .code-slash-modif {
-  color: gold;
+  color: #E5B80B;
   margin-right: 0.5rem;
 }
 body header .navbar-nav-modif {
@@ -49,11 +49,11 @@ body header .navbar-nav-modif {
 }
 body header .navbar-nav .nav-link.active,
 body header .navbar-nav .show > .nav-link {
-  color: gold;
+  color: #E5B80B;
 }
 body header .btn-outline-success {
-  color: gold;
-  border-color: gold;
+  color: #E5B80B;
+  border-color: #E5B80B;
 }
 body header .nav-link-modif {
   position: relative;
@@ -69,7 +69,7 @@ body header .nav-link-modif:hover {
 }
 body header .nav-link::after {
   content: "";
-  background-image: gold;
+  background-image: #E5B80B;
   position: absolute;
   left: 0;
   top: 95%;
@@ -88,7 +88,7 @@ body header .nav-link.active:hover {
 }
 body header .nav-link.active::after {
   opacity: 1;
-  background-color: gold;
+  background-color: #E5B80B;
 }
 
 body .main-index {
@@ -142,7 +142,7 @@ body .main-index .container-index__section .icon-ul {
 body .main-index .container-index__section .icon-ul .resize-svg {
   padding-right: 3%;
   margin-top: 1em;
-  color: goldenrod;
+  color: #E5B80B;
 }
 body .main-pages {
   padding: 3em;
@@ -174,7 +174,7 @@ body .main-pages .section-page .section-sobre-mi__div-parrafo {
   text-align: center;
 }
 body .main-pages .section-page .section-sobre-mi__div-parrafo .certificado-d-w:hover {
-  color: goldenrod;
+  color: #E5B80B;
   text-shadow: 0 0.125rem 0.325rem rgba(255, 217, 0, 0.559);
 }
 body .main-pages .section-page .bg-svg-arrow .arrow-top {
@@ -182,7 +182,7 @@ body .main-pages .section-page .bg-svg-arrow .arrow-top {
   background-size: 100%;
 }
 body .main-pages .section-page .bg-svg-arrow .arrow-top:hover {
-  color: goldenrod;
+  color: #E5B80B;
 }
 body .main-pages .section-page .section-competencias__p {
   font-size: 1.6rem;
@@ -331,27 +331,27 @@ body .main-pages .section-page form {
   color: #f2f2f2;
 }
 body .main-pages .section-page form .form-control {
-  color: gold;
+  color: #E5B80B;
   background-color: transparent;
 }
 body .main-pages .section-page form .form-floating > .form-control-plaintext:focus, body .main-pages .section-page form .form-floating > .form-control-plaintext:not(:placeholder-shown), body .main-pages .section-page form .form-floating > .form-control:focus, body .main-pages .section-page form .form-floating > .form-control:not(:placeholder-shown) {
   padding-top: 1.925rem;
   padding-bottom: 0.925rem;
-  box-shadow: 0 0.3125rem 0.625rem gold;
+  box-shadow: 0 0.3125rem 0.625rem #E5B80B;
 }
 body .main-pages .section-page form .form-check {
   padding-top: 2em;
   margin-left: 0.1em;
 }
 body .main-pages .section-page .btn-form {
-  border-color: #01030d;
+  border-color: #000;
   font-weight: bolder;
   color: #000;
-  background-color: gold;
+  background-color: #E5B80B;
   margin: 2em;
 }
 body .main-pages .section-page .btn-form:hover {
-  box-shadow: 0 0.3125rem 0.625rem gold;
+  box-shadow: 0 0.3125rem 0.625rem #E5B80B;
 }
 
 body .footer-index {
@@ -360,13 +360,14 @@ body .footer-index {
 }
 body .footer-index .title-footer {
   font-family: monospace;
-  color: gold;
+  color: #E5B80B;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 body footer {
-  border-top: 0.2px solid gold;
+  border-top: 0.2px solid #E5B80B;
   position: relative;
   bottom: 0;
   height: 10vh;
@@ -382,7 +383,7 @@ body footer ul .resize-svg {
   height: 1.7rem;
 }
 body footer ul .resize-svg:hover {
-  color: gold;
+  color: #E5B80B;
 }
 body footer .footerConteinerUl__li-index {
   display: none;
@@ -432,18 +433,18 @@ body footer .footerConteinerUl__li-index {
   body header nav {
     background-color: #000;
   }
+  body header nav .navbar-collapse-menu {
+    height: 100vh;
+    margin-top: 6.3rem;
+    font-size: 1.6rem;
+  }
   body header nav .navbar-nav .nav-link,
 body header nav .navbar-nav .show > .nav-link {
     display: flex;
     justify-content: center;
   }
   body header nav .navbar-toggler {
-    color: gold;
-  }
-  body header nav .navbar-collapse-menu {
-    height: 100vh;
-    margin-top: 15%;
-    font-size: 1.5rem;
+    color: #E5B80B;
   }
   body header nav .navbar-nav .nav-link.active,
 body header nav .navbar-nav .show > .nav-link {
@@ -458,35 +459,26 @@ body header nav .navbar-nav .show > .nav-link {
     content: none;
   }
   body .main-index {
-    background-image: url(../img/bg-index-mobile.jpg);
-    background-size: cover;
-    overflow-x: hidden;
-    font-size: 3rem;
-  }
-  body .main-index .container-icon {
-    display: none;
+    font-size: 1.5rem;
   }
   body .main-index .container-index__section {
-    padding: 5em 0 5em 0;
+    margin: 15% 14% 0 20%;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  body .main-index .container-index__section .picture .picture-logo {
+    margin: 0.5em 0 0 4.6em;
+    width: 10rem;
   }
   body .main-index .container-index__section .index-section__h1 {
-    max-width: 100%;
-    font-size: 3rem;
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 0 5.2em;
-    border: 0;
-    border-bottom: 1px solid #f2f2f2;
-    padding: 3%;
+    margin: 1.5rem 0 0 4.5rem;
   }
-  body .main-index .container-index__section .index-section__h1 .nombre-index {
-    font-size: 2.3rem;
-    max-width: 100%;
+  body .main-index .container-index__section .container .index-section__p1 {
+    display: none;
   }
-  body .main-index .container-index__section .index-section__p {
-    margin: 0 0 0 4em;
-    font-size: 1rem;
-    max-width: 100%;
+  body .main-index .container-index__section .container-icon .icon-ul {
+    gap: 2em;
+    margin: 1em 0 2em 0;
   }
   body .main-pages .section-page .main-titles__h1 {
     font-size: 2.8rem;
@@ -495,39 +487,41 @@ body header nav .navbar-nav .show > .nav-link {
     margin: 0 0 2em 0;
   }
   body .main-pages .section-page .container-proyectos {
-    margin-left: 6.5rem;
+    margin-left: 5.9rem;
   }
-  body footer .title-footer {
-    display: none;
+  body .footer-index .title-footer {
+    font-size: 0.9rem;
   }
-  body footer ul {
+  body .footer-index ul {
     gap: 2em;
     margin-right: 2em;
   }
-  body footer ul .footerConteinerUl__li-index {
-    display: initial;
-  }
-  body footer ul .footerConteinerUl__li-index .resize-svg {
-    width: 1.3rem;
-  }
 }
 @media only screen and (max-width: 576px) {
-  body header nav {
-    background-color: #000;
+  body header nav .navbar-collapse-menu {
+    font-size: 1.8rem;
   }
   body header .container-nav {
-    margin: 0 1em 0 2em;
+    margin: 0 2%;
+  }
+  body .main-index {
+    padding: 0 5%;
   }
   body .main-index .container-index__section {
-    margin: 0;
+    margin: 20% 16% 0 0;
+  }
+  body .main-index .container-index__section .picture .picture-logo {
+    margin: 3em 0 0 3.1em;
+    width: 10rem;
   }
   body .main-index .container-index__section .index-section__h1 {
-    margin-left: 4.2em;
-  }
-  body .main-index .container-index__section .index-section__p {
-    margin-left: 2.5em;
+    width: 100%;
     font-size: 1.3rem;
-    padding: 1em 0.3em;
+    margin: 1.5rem 0 0 0.2rem;
+  }
+  body .main-index .container-index__section .container-icon .icon-ul {
+    gap: 1.12em;
+    margin: 1rem 0 1rem 0.5rem;
   }
   body .main-pages {
     padding: 3%;
@@ -538,21 +532,29 @@ body header nav .navbar-nav .show > .nav-link {
     width: 100%;
     margin: 3em 0 2em 0;
   }
-  body .main-pages .section-page .row-cards-group {
-    display: flex;
-    flex-direction: column;
+  body .main-pages .section-page .container-skills {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 3em;
   }
-  body footer .title-footer {
-    display: none;
+  body .main-pages .section-page .container-skills .skill {
+    margin-top: 1rem;
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+  body .main-pages .section-page .container-skills .skill::after {
+    padding: 2em;
+    width: 3.25rem;
+    height: 3.25rem;
+    background-size: 3rem 3rem;
+  }
+  body .main-pages .section-page .container-proyectos {
+    margin: 0;
+    column-gap: 5rem;
   }
   body footer ul {
-    gap: 3em;
-  }
-  body footer ul .resize-svg {
-    height: 1.7rem;
-  }
-  body footer .footerConteinerUl__li-index {
-    display: initial;
+    gap: 2em;
+    margin-right: 1em;
   }
 }
 
