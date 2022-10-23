@@ -188,12 +188,16 @@ body {
 
             // Contacto
             form {
-                color: rgb(128, 128, 128);
-                // .form-floating>.form-control, .form-floating>.form-control-plaintext {
-                //     &:target{
-                //         border-style: #000;
-                //     }
-                // }
+                color: #f2f2f2;
+                .form-control {
+                    color: gold;
+                    background-color: transparent;
+                }
+                .form-floating>.form-control-plaintext:focus, .form-floating>.form-control-plaintext:not(:placeholder-shown), .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
+                    padding-top: 1.925rem;
+                    padding-bottom: 0.925rem;
+                    box-shadow: 0 0.3125rem 0.625rem gold;
+                }
                 .form-check {
                     padding-top: $spacing-xsmall;
                     margin-left: .1em;

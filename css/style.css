@@ -328,7 +328,16 @@ body .main-pages .section-page .container-proyectos .card-proyectos .back {
   box-shadow: 0 0.3125rem 0.625rem gold;
 }
 body .main-pages .section-page form {
-  color: rgb(128, 128, 128);
+  color: #f2f2f2;
+}
+body .main-pages .section-page form .form-control {
+  color: gold;
+  background-color: transparent;
+}
+body .main-pages .section-page form .form-floating > .form-control-plaintext:focus, body .main-pages .section-page form .form-floating > .form-control-plaintext:not(:placeholder-shown), body .main-pages .section-page form .form-floating > .form-control:focus, body .main-pages .section-page form .form-floating > .form-control:not(:placeholder-shown) {
+  padding-top: 1.925rem;
+  padding-bottom: 0.925rem;
+  box-shadow: 0 0.3125rem 0.625rem gold;
 }
 body .main-pages .section-page form .form-check {
   padding-top: 2em;
@@ -428,6 +437,14 @@ body header nav .navbar-nav .show > .nav-link {
     display: flex;
     justify-content: center;
   }
+  body header nav .navbar-toggler {
+    color: gold;
+  }
+  body header nav .navbar-collapse-menu {
+    height: 100vh;
+    margin-top: 15%;
+    font-size: 1.5rem;
+  }
   body header nav .navbar-nav .nav-link.active,
 body header nav .navbar-nav .show > .nav-link {
     display: flex;
@@ -444,7 +461,7 @@ body header nav .navbar-nav .show > .nav-link {
     background-image: url(../img/bg-index-mobile.jpg);
     background-size: cover;
     overflow-x: hidden;
-    font-size: 1.3rem;
+    font-size: 3rem;
   }
   body .main-index .container-icon {
     display: none;
@@ -454,7 +471,7 @@ body header nav .navbar-nav .show > .nav-link {
   }
   body .main-index .container-index__section .index-section__h1 {
     max-width: 100%;
-    font-size: 1.5rem;
+    font-size: 3rem;
     display: flex;
     flex-direction: column;
     margin: 0 0 0 5.2em;

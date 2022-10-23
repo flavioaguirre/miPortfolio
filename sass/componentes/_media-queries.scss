@@ -61,6 +61,14 @@
                     display: flex;
                     justify-content: center;
                 }
+                .navbar-toggler {
+                    color: gold;
+                }
+                .navbar-collapse-menu {
+                    height: 100vh;
+                    margin-top: 15%;
+                    font-size: $text-base;
+                }
                 .navbar-nav .nav-link.active,
                 .navbar-nav .show > .nav-link {
                     display: flex;
@@ -81,7 +89,7 @@
             background-image: url(../img/bg-index-mobile.jpg);
             background-size: cover;
             overflow-x: hidden;
-            font-size: $text-xsmall;
+            font-size: $text-small;
             .container-icon {
                 display: none;
             }
@@ -89,7 +97,7 @@
                 padding: $spacing-medium 0 $spacing-medium 0;
                 .index-section__h1 {
                     max-width: 100%;
-                    font-size: $text-base;
+                    font-size: $text-small;
                     display: flex;
                     flex-direction: column;
                     margin: 0 0 0 5.2em;
